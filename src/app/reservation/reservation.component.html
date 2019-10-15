@@ -1,0 +1,22 @@
+<form #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
+
+  <div class="form-group">
+    <label for="FirstName">First Name</label>
+    <input type="text" name="FirstName" [(ngModel)]="event.FirstName">
+  </div>
+  <div class="form-group">
+    <label for="LastName">Last Name</label>
+    <input type="text" name="LastName" [(ngModel)]="event.LastName">
+  </div>
+  <div class="form-group"> <input type="text" name="Phone" [(ngModel)]="event.Phone">Phone</div>
+  <div class="form-group"><input type="email" name="Email" [(ngModel)]="event.Email">Email</div>
+  <div class="form-group"><input type="email" name="ConfirmedEmail" [(ngModel)]="event.ConfirmedEmail">ConfirmedEmail
+  </div>
+  <div class="form-group"><input type="date" name="EventTime" [(ngModel)]="event.EventTime">Time</div>
+  <div class="form-group"><input type="text" name="EventType" [(ngModel)]="event.EventType">Type</div>
+  <div class="form-group"><input type="number" name="AmountOfPeople" [(ngModel)]="event.AmountOfPeople">Amount of
+    people
+  </div>
+
+  <input type="submit" value="Submit">
+</form>
