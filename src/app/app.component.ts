@@ -8,10 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pumpkin';
-  navbarOpen = false;
-
-  toggleNavbar() {
-    this.navbarOpen = !this.navbarOpen;
-  }
 
 }
