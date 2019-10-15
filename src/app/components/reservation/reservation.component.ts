@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { Event } from "../_models/Event";
-import { EventService } from "../_services/event.service";
+import { Event } from "../../_models/Event";
+import { EventService } from "../../_services/event.service";
 
 @Component({
   selector: "app-reservation",
