@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import {environment} from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
@@ -31,14 +30,14 @@ import { EventService } from './_services/event.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularFireModule.initializeApp(environment.firebase,'Calendar'),
+    AngularFireModule.initializeApp(environment.firebase, "Calendar"),
     AngularFirestoreModule,
-    AngularFireAuthModule, 
+    AngularFireAuthModule,
     AngularFireStorageModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [EventService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
