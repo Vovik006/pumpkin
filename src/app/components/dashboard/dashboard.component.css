@@ -1,0 +1,42 @@
+.start-window {
+    background-color: #FFEEC3;
+    min-height: 53em;
+}
+
+#pumpkin {
+    position: relative;
+    right: 11em;
+}
+
+#title {
+    position: relative;
+    top: 4em;
+    font-weight: 900;
+    font-size: 37pt;
+    letter-spacing: 0.12em;
+}
+
+#children {
+    position: relative;
+    top: 5.5em;
+    font-weight: 400;
+    font-size: 30pt;
+    letter-spacing: 0.03em;
+}
+
+#more {
+    position: relative;
+    top: 10em;
+    border-radius: 1em;
+    font-size: xx-large;
+    background-color: #FFB059;
+    border: none;
+    color: white;
+    width: 8em;
+    height: 2em;
+    cursor: pointer;
+}
+
+#more:hover {
+    background-color: orange;
+}
