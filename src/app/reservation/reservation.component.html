@@ -1,4 +1,4 @@
-<form #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
+<!-- <form #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
 
   <div class="form-group">
     <label for="FirstName">First Name</label>
@@ -19,4 +19,61 @@
   </div>
 
   <input type="submit" value="Submit">
-</form>
+</form> -->
+
+<div class="card">
+  <div class="card-header">
+    Add User
+  </div>
+  <div class="card-body">
+    <form #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
+      <div class="form-group">
+        <label for="FirstName">Name</label>
+        <input type="text" class="form-control" name="FirstName" #userFirstName="ngModel"
+          [ngClass]="{'is-invalid':userFirstName.errors && userFirstName.touched}" [(ngModel)]="event.FirstName"
+          minlength="2" required>
+        <div [hidden]="!userFirstName.errors?.required" class="invalid-feedback">
+          Name required
+        </div>
+        <div [hidden]="!userFirstName.errors?.minlength" class="invalid-feedback">
+          Must be at least 2 characters
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="LastName">Surname</label>
+        <input type="text" class="form-control" name="LastName" #userLastName="ngModel"
+          [ngClass]="{'is-invalid':userLastName.errors && userLastName.touched}" [(ngModel)]="event.LastName"
+          minlength="2" required>
+        <div [hidden]="!userLastName.errors?.required" class="invalid-feedback">
+          Surname required
+        </div>
+        <div [hidden]="!userLastName.errors?.minlength" class="invalid-feedback">
+          Must be at least 2 characters
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input type="number" class="form-control" name="Phone" #userPhone="ngModel"
+          [ngClass]="{'is-invalid':userPhone.errors && userPhone.touched}" [(ngModel)]="event.Phone"
+          required>
+        <div [hidden]="!userPhone.errors?.required" class="invalid-feedback">
+          Phone is required
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" name="Email" #userEmail="ngModel"
+          [ngClass]="{'is-invalid':auserEmail.errors && auserEmail.touched}" [(ngModel)]="event.Email"
+          pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+          required>
+        <div [hidden]="!userEmail.errors?.required" class="invalid-feedback">
+          Email is required
+        </div>
+        <div [hidden]="!userEmail.errors?.pattern" class="invalid-feedback">
+          Email is not valid
+        </div>
+      </div>
+      <input type="submit" value="Submit" class="btn btn-primary btn-block">
+    </form>
+  </div>
+</div>
