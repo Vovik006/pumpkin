@@ -16,8 +16,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-import { ReservationComponent } from './reservation/reservation.component';
+import { ReservationComponent } from './components/reservation/reservation.component';
 import { EventService } from './_services/event.service';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { EventService } from './_services/event.service';
     NavbarComponent,
     DashboardComponent,
     ReservationComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
