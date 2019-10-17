@@ -14,9 +14,8 @@ export class ReservationComponent implements OnInit {
     LastName: "",
     Phone: "",
     AmountOfPeople: 0,
-    ConfirmedEmail: "",
-    EventTime: new Date(),
-    EventType: "",
+    Time: new Date(),
+    Type: "",
     Confirmed: false
   };
   eventik: Event;

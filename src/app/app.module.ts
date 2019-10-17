@@ -2,23 +2,27 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import {environment} from '../environments/environment';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from "../environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireStorageModule } from "@angular/fire/storage";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './components/navbar/navbar.component';
-
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-
-import { ReservationComponent } from './components/reservation/reservation.component';
-import { EventService } from './_services/event.service';
-import { AboutUsComponent } from './components/about-us/about-us.component';
+import { BenefitsComponent } from "./components/benefits/benefits.component";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { ReservationComponent } from "./components/reservation/reservation.component";
+import { EventService } from "./_services/event.service";
+import { LoginComponent } from "./components/admin/login/login.component";
+import { AboutUsComponent } from "./components/about-us/about-us.component";
+import { ADashboardComponent } from "./components/admin/a-dashboard/a-dashboard.component";
+import { ANavbarComponent } from "./components/admin/a-navbar/a-navbar.component";
+import { EventsComponent } from "./components/admin/events/events.component";
+import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +30,13 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     NavbarComponent,
     DashboardComponent,
     ReservationComponent,
+    BenefitsComponent,
+    LoginComponent,
     AboutUsComponent,
+    ADashboardComponent,
+    ANavbarComponent,
+    EventsComponent,
+    AMessagesComponent,
   ],
   imports: [
     BrowserModule,
