@@ -13,15 +13,16 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 
+import { BenefitsComponent } from "./components/benefits/benefits.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { ReservationComponent } from "./components/reservation/reservation.component";
 import { EventService } from "./_services/event.service";
 import { LoginComponent } from "./components/admin/login/login.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
-import { ADashboardComponent } from './components/admin/a-dashboard/a-dashboard.component';
-import { ANavbarComponent } from './components/admin/a-navbar/a-navbar.component';
-import { EventsComponent } from './components/admin/events/events.component';
-import { AMessagesComponent } from './components/admin/a-messages/a-messages.component';
+import { ADashboardComponent } from "./components/admin/a-dashboard/a-dashboard.component";
+import { ANavbarComponent } from "./components/admin/a-navbar/a-navbar.component";
+import { EventsComponent } from "./components/admin/events/events.component";
+import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
 
 @NgModule({
   declarations: [
@@ -29,18 +30,13 @@ import { AMessagesComponent } from './components/admin/a-messages/a-messages.com
     NavbarComponent,
     DashboardComponent,
     ReservationComponent,
-
+    BenefitsComponent,
     LoginComponent,
-
     AboutUsComponent,
-
     ADashboardComponent,
-
     ANavbarComponent,
-
     EventsComponent,
-
-    AMessagesComponent
+    AMessagesComponent,
   ],
   imports: [
     BrowserModule,
