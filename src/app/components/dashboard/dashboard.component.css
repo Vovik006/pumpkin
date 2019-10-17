@@ -1,6 +1,7 @@
 .start-window {
     background-color: #FFEEC3;
     min-height: 53em;
+    height: 100%;
 }
 
 #pumpkin {
@@ -13,7 +14,8 @@
     top: 4em;
     font-weight: 900;
     font-size: 37pt;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.18em;
+    font-family: Roboto;
 }
 
 #children {
@@ -22,6 +24,7 @@
     font-weight: 400;
     font-size: 30pt;
     letter-spacing: 0.03em;
+    font-family: Roboto;
 }
 
 #more {

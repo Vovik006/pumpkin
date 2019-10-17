@@ -14,10 +14,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
-
 import { ReservationComponent } from "./components/reservation/reservation.component";
 import { EventService } from "./_services/event.service";
-import { LoginComponent } from './components/admin/login/login.component';
+import { LoginComponent } from "./components/admin/login/login.component";
+import { AboutUsComponent } from "./components/about-us/about-us.component";
 
 @NgModule({
   declarations: [
@@ -25,7 +25,10 @@ import { LoginComponent } from './components/admin/login/login.component';
     NavbarComponent,
     DashboardComponent,
     ReservationComponent,
-    LoginComponent
+
+    LoginComponent,
+
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
