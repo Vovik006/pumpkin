@@ -18,6 +18,10 @@ import { ReservationComponent } from "./components/reservation/reservation.compo
 import { EventService } from "./_services/event.service";
 import { LoginComponent } from "./components/admin/login/login.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
+import { ADashboardComponent } from './components/admin/a-dashboard/a-dashboard.component';
+import { ANavbarComponent } from './components/admin/a-navbar/a-navbar.component';
+import { EventsComponent } from './components/admin/events/events.component';
+import { AMessagesComponent } from './components/admin/a-messages/a-messages.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,15 @@ import { AboutUsComponent } from "./components/about-us/about-us.component";
 
     LoginComponent,
 
-    AboutUsComponent
+    AboutUsComponent,
+
+    ADashboardComponent,
+
+    ANavbarComponent,
+
+    EventsComponent,
+
+    AMessagesComponent
   ],
   imports: [
     BrowserModule,

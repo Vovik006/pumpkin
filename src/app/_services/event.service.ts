@@ -8,7 +8,6 @@ import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 
 import { Event } from "../_models/Event";
-import {ContactUs} from "../_models/ContactUs";
 
 @Injectable({
   providedIn: "root"
@@ -19,14 +18,8 @@ export class EventService {
   events: Observable<Event[]>;
   event: Observable<Event>;
 
-  messagesCollection:AngularFirestoreCollection<ContactUs>;
-  messageDoc:AngularFirestoreDocument<ContactUs>;
-  messages:Observable<ContactUs[]>;
-  message:Observable<ContactUs>;
-
   constructor(private afs: AngularFirestore) {
     this.eventsCollection = this.afs.collection<Event>("Events");
-    this.messagesCollection=this.afs.collection<ContactUs>("Messages");
   }
 
   newEvent(event: Event) {
@@ -38,17 +31,11 @@ export class EventService {
       map(changes => {
         return changes.map(action => {
           const data = action.payload.doc.data() as Event;
-          data.LastName = action.payload.doc.id;
+          data.id = action.payload.doc.id;
           return data;
         });
       })
     );
     return this.events;
-  }
-
-  newMessage(message:ContactUs) {
-
-    this.messagesCollection.add(message);
-
   }
 }

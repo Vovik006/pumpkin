@@ -3,26 +3,25 @@ import { AuthService } from "../../../_services/auth.service";
 import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-login",
-  templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.css"]
+  selector: "app-a-navbar",
+  templateUrl: "./a-navbar.component.html",
+  styleUrls: ["./a-navbar.component.css"]
 })
-export class LoginComponent implements OnInit {
-  email: string;
-  password: string;
-
+export class ANavbarComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) {}
+
+  loggedInUser: string;
 
   ngOnInit() {
     this.authService.getAuth().subscribe(auth => {
       if (auth) {
-        //Must be a navigation to an admin panel
-        this.router.navigate(['/adminpanel']);
+        this.loggedInUser = auth.email;
       }
     });
   }
 
-  onSubmit() {
-    this.authService.login(this.email, this.password);
+  onLogoutClick() {
+    this.authService.logout();
+    this.router.navigate(['/login']);
   }
 }
