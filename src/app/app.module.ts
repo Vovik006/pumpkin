@@ -1,6 +1,6 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {environment} from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
@@ -16,8 +16,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
-import { ReservationComponent } from './reservation/reservation.component';
+import { ReservationComponent } from './components/reservation/reservation.component';
 import { EventService } from './_services/event.service';
+import { BenefitsComponent } from './components/benefits/benefits.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { EventService } from './_services/event.service';
     NavbarComponent,
     DashboardComponent,
     ReservationComponent,
+    BenefitsComponent,
   ],
   imports: [
     BrowserModule,
