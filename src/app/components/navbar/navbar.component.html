@@ -1,26 +1,24 @@
 <nav id="navbar" class="navbar navbar-expand-sm">
-    <a class="navbar-brand" href="/">
-        <img src="../../../assets/img/Logo.svg" alt="">
-    </a>
+  <a class="navbar-brand" href="/">
+    <img src="../../../assets/img/Logo.svg" alt="">
+  </a>
 
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-      <span class="navbar-toggler-icon" >
-          <i class="material-icons">list</i>
-      </span>
-    </button>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon">
+      <i class="material-icons">list</i>
+    </span>
+  </button>
 
 
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Item 1</a>
-            </li>
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#o-nas">O nas</a>
+      </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Item 2</a>
-            </li>
-        </ul>
-    </div>
-
+      <li class="nav-item">
+        <a class="nav-link" href="#">Item 2</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-
