@@ -23,6 +23,8 @@ import { ADashboardComponent } from "./components/admin/a-dashboard/a-dashboard.
 import { ANavbarComponent } from "./components/admin/a-navbar/a-navbar.component";
 import { EventsComponent } from "./components/admin/events/events.component";
 import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
+import { ProgramComponent } from './components/program/program.component';
+import { PriceComponent } from './components/price/price.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { AMessagesComponent } from "./components/admin/a-messages/a-messages.com
     ANavbarComponent,
     EventsComponent,
     AMessagesComponent,
+    ProgramComponent,
+    PriceComponent,
   ],
   imports: [
     BrowserModule,

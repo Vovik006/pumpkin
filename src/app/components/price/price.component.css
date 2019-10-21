@@ -1,0 +1,181 @@
+.card {
+  border: 0px;
+  border-radius: 40px;
+  background-color: #FFF5DB;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+}
+
+.card-title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.card-text {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.card-img {
+  max-width: 163px;
+}
+.header_card img{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 28px;
+}
+
+
+
+.pic-bg-1{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.73%, #FFF5DB 100%), url("../../../assets/img/pump.png") no-repeat ;
+  background-size: cover;
+}
+.pic-bg-2{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.73%, #FFF5DB 100%), url("../../../assets/img/field.png") no-repeat ;
+  background-size: cover;
+}
+.pic-bg-3{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.73%, #FFF5DB 100%), url("../../../assets/img/pole.png") no-repeat ;
+  background-size: cover;
+}
+.pic-bg-4{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30.73%, #FFF5DB 100%), url("../../../assets/img/sheeps.png") no-repeat ;
+  background-size: cover;
+}
+
+
+
+.display_font h2{
+  font-family: Times;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+
+  border-bottom: 9px solid #FFEEC3;
+  display: inline-block;
+  line-height: 0.4;
+}
+
+.header_card h5{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lignter{
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: lighter;
+  margin-bottom: 6px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer_card {
+display: flex;
+  justify-content: center;
+
+  padding-bottom: 30px;
+}
+
+.row {
+  margin-right: 0;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .display_font h2{
+    font-size: 33px;
+    line-height: 1;
+    border: 0;
+    text-decoration: underline #FFEEC3;
+
+  }
+}
+.row{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kontur{
+  border: #FEC45E 3px solid;
+
+}
+.btn-border{
+  background-color: #FF7058;
+  color: white;
+  border-radius: 25px;
+
+}
+.body_card{
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.ul-round-red ul li {
+  color: red;
+
+}
+ ul li::before {
+  color: #FF7058;
+  /* color of bullet or square */
+  content: "\2022";
+  /* Unicode of character to precede the list item */
+  font-size: 1.5em;
+  /* use em or % */
+  left: -1.1225em;
+  /* use em, line up bullet flush with left hand side */
+  position: absolute;
+  /* Set the bullet positioned absolutely top left */
+  top: -0.1em;
+  /* use em or % */
+}
+
+ ul li {
+  color: #3c3c3c;
+  /* set color of list item text */
+  list-style: none;
+  margin: 0 0 5px 1.1225em;
+  /* Give the bullet room on the left hand side */
+  padding: 0;
+  position: relative;
+   line-height: 22px;
+}
+
+ .price_card h3 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 32px;
+   line-height: 37px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: rgba(0, 0, 0, 0.7);
+   padding-bottom: 0;
+   margin-bottom: 0;
+ }
+ .price_card p{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: rgba(0, 0, 0, 0.7);
+   padding-bottom: 0;
+   margin-bottom: 10px;
+ }
+.line_height li{
+  padding-bottom: 7px;
+}
