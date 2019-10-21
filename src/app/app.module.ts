@@ -23,9 +23,12 @@ import { ADashboardComponent } from "./components/admin/a-dashboard/a-dashboard.
 import { ANavbarComponent } from "./components/admin/a-navbar/a-navbar.component";
 import { EventsComponent } from "./components/admin/events/events.component";
 import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
+
 import { ProgramComponent } from './components/program/program.component';
 import { PriceComponent } from './components/price/price.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { VideoComponent } from './components/video/video.component';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ProgramComponent,
     PriceComponent,
     ContactComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,
