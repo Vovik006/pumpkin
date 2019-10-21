@@ -6,6 +6,7 @@
     display: flex;
     position: absolute;
     left: 0;
+    background-color: #FFEEC3;
 }
 
 #about-us-left {
