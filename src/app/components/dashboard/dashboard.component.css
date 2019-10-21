@@ -4,6 +4,14 @@
     height: 100%;
 }
 
+#start-img {
+    display: flex;
+}
+
+#dashboard {
+    vertical-align: middle;
+}
+
 #pumpkin {
     position: relative;
     right: 11em;
@@ -16,6 +24,7 @@
     font-size: 37pt;
     letter-spacing: 0.18em;
     font-family: Roboto;
+    left: 2em;
 }
 
 #children {
@@ -25,6 +34,7 @@
     font-size: 30pt;
     letter-spacing: 0.03em;
     font-family: Roboto;
+    left: 2.5em;
 }
 
 #more {
@@ -38,6 +48,7 @@
     width: 8em;
     height: 2em;
     cursor: pointer;
+    left: 3em;
 }
 
 #more:hover {
