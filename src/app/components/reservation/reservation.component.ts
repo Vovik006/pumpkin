@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { Event } from "../../_models/Event";
 import { EventService } from "../../_services/event.service";
 
-
 @Component({
   selector: "app-reservation",
   templateUrl: "./reservation.component.html",
@@ -10,34 +9,21 @@ import { EventService } from "../../_services/event.service";
 })
 export class ReservationComponent implements OnInit {
   counter: number = 0;
-  kek: string;
-  myDate = new Date();
+  event: Event;
 
-  event: Event = {
-    Email: "",
-    FirstName: "",
-    LastName: "",
-    Phone: "",
-    AmountOfPeople: 0,
-    Date: new Date(),
-    Time: 0,
-    Type: "",
-    Confirmed: false
-  };
-  eventik: Event;
-
-  @ViewChild("eventForm", { static: false }) form: any;
+  today:Date=new Date();
+  date:any;
 
   constructor(private es: EventService) {}
 
   ngOnInit() {
     this.es.getEvents().subscribe(e => console.log(e));
+    this.date=this.today.getFullYear()+'-'+(this.today.getMonth()+1)+'-'+this.today.getDate();
   }
 
-  onSubmit({ value, valid }: { value: Event; valid: boolean }) {
-    if (valid) {
-      this.es.newEvent(value);
-    }
+  onSubmit(event) {
+
+    this.es.newEvent(event);
   }
   Plus() {
     this.counter = this.counter + 1;

@@ -20,7 +20,7 @@
   max-height: 1143px;
   width: 800px;
   height: 400px;
-  margin-top:58px ;
+  margin-top: 58px;
 
 }
 
@@ -58,12 +58,28 @@ label {
 }
 
 #minus {
-    margin-right: auto;
-    border: none;
-    background-color: #fff;
+  margin-right: auto;
+  border: none;
+  background-color: #fff;
 }
+
 #plus {
-    margin-left:auto;
-    border: none;
-    background-color: #fff;
+  margin-left: auto;
+  border: none;
+  background-color: #fff;
+}
+
+select {
+  border: solid 1px #D7D7D7;
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+  margin-left: 67px;
+  margin-top: 36px;
+  margin-bottom: 0px;
+  width: 294px;
+  height: 24px;
+}
+#big {
+  width: 294px;
+  height: 24px;
 }
