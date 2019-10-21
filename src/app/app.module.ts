@@ -25,6 +25,7 @@ import { EventsComponent } from "./components/admin/events/events.component";
 import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
 import { ProgramComponent } from './components/program/program.component';
 import { PriceComponent } from './components/price/price.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { PriceComponent } from './components/price/price.component';
     AMessagesComponent,
     ProgramComponent,
     PriceComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
