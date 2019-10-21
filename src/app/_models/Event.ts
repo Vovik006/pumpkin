@@ -2,7 +2,8 @@ export interface Event {
     id?:String;
     AmountOfPeople:number;
     Confirmed:boolean;
-    Time:Date;
+    Date:Date
+    Time:number;
     Type:String;
     FirstName:String;
     LastName:String;
