@@ -1,0 +1,69 @@
+.bg-tint{
+  background: rgba(255, 238, 195, 0.6);
+}
+
+.display_font h2{
+  font-family: Times;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+
+  border-bottom: 9px solid #FFEEC3;
+  display: inline-block;
+  line-height: 0.4;
+}
+@media screen and (max-width: 600px) {
+
+  .display_font h2{
+    font-size: 33px;
+    line-height: 1;
+    border: 0;
+    text-decoration: underline #FFEEC3;
+
+  }
+}
+
+.text h3{
+  font-family: Times;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: 0.02em;
+
+  margin: 0;
+}
+
+.text p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.btn-red{
+  background: #FF7058;
+  color: white;
+  border-radius: 30px;
+  padding: 6px 35px;
+  margin-left: 35%;
+}
+
+.map-container-4{
+  overflow:hidden;
+  padding-bottom:350px;
+  position:relative;
+  height:0;
+}
+.map-container-4 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
