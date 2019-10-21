@@ -5,13 +5,22 @@
 .nav-link {
     color: black;
     cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
 }
 
 .nav-link:hover {
     background-color: orange;
 }
 
-#top-section {
-    background-color: #FFEEC3;
-    width: 100%;
+.nav-item {
+    justify-content: space-between;
+}
+
+.collapse {
+    position: absolute;
+    right: 0;
 }
