@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
@@ -50,6 +51,7 @@ import { VideoComponent } from './components/video/video.component';
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase, "Calendar"),
