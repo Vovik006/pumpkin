@@ -1,5 +1,6 @@
 <app-a-navbar></app-a-navbar>
-<div class="row">
+<div class="container">
+  <div class="row">
     <div class="col-md-6">
       <h2><i class="fa fa-users"></i> Messages</h2>
     </div>
@@ -18,13 +19,14 @@
         <td>{{message.Email}}</td>
         <td>{{message.Message}}</td>
         <!-- <td><a routerLink="/{{client.id}}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-o-right">
-        </i>Details</a></td> -->
+            </i>Details</a></td> -->
       </tr>
     </tbody>
   </table>
-  
+
   <ng-template #noMessages>
     <hr>
     <h5>There are no messages in the system</h5>
   </ng-template>
-  
+
+</div>

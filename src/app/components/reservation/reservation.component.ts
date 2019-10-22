@@ -9,21 +9,28 @@ import { EventService } from "../../_services/event.service";
 })
 export class ReservationComponent implements OnInit {
   counter: number = 0;
-  event: Event;
-
-  today:Date=new Date();
-  date:any;
+  event: Event = {
+    Type: "",
+    Date: new Date(),
+    Time: 0,
+    AmountOfPeople: 9,
+    FirstName: "",
+    LastName: "",
+    Phone: "",
+    Email: "",
+    Confirmed: false
+  };
+  today: Date = new Date();
 
   constructor(private es: EventService) {}
 
   ngOnInit() {
     this.es.getEvents().subscribe(e => console.log(e));
-    this.date=this.today.getFullYear()+'-'+(this.today.getMonth()+1)+'-'+this.today.getDate();
   }
 
-  onSubmit(event) {
-
-    this.es.newEvent(event);
+  onSubmit() {
+    this.event.AmountOfPeople = this.counter;
+    this.es.newEvent(this.event);
   }
   Plus() {
     this.counter = this.counter + 1;
