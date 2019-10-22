@@ -29,6 +29,7 @@ import { ProgramComponent } from './components/program/program.component';
 import { PriceComponent } from './components/price/price.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VideoComponent } from './components/video/video.component';
+import { RegComponent } from './components/reg/reg.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { VideoComponent } from './components/video/video.component';
     PriceComponent,
     ContactComponent,
     VideoComponent,
+    RegComponent,
   ],
   imports: [
     BrowserModule,

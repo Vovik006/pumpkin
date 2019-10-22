@@ -141,3 +141,14 @@
             top: 25em;
         }
     }
+
+#but {
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left:50vw;
+    text-decoration: underline;
+    color: black;
+    display: block;
+
+    
+}
