@@ -9,7 +9,7 @@
             <span id="children"> Dzieci uwielbiają to miejsce!</span>
             <a href="#o-nas"><button id="more">Zobacz więcej</button></a>
         </div>
-        <a href="#navbar"><button id="go_top">GO!</button></a>
+        <button id="go_top" *ngIf="isShow" (click)="gototop()"><img id="arrow" src="../../../assets/img/expand-arrow.svg" alt=""></button>
     </div>
 </div>
 <app-about-us></app-about-us>
