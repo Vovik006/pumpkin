@@ -1,56 +1,145 @@
-.start-window {
-    background-color: #FFEEC3;
-    min-height: 53em;
-    height: 100%;
-}
-
-#start-img {
-    display: flex;
-}
-
-#dashboard {
-    vertical-align: middle;
-}
-
-#pumpkin {
-    position: relative;
-    right: 11em;
-}
-
-#title {
-    position: relative;
-    top: 4em;
-    font-weight: 900;
-    font-size: 37pt;
-    letter-spacing: 0.18em;
-    font-family: Roboto;
-    left: 2em;
-}
-
-#children {
-    position: relative;
-    top: 5.5em;
-    font-weight: 400;
-    font-size: 30pt;
-    letter-spacing: 0.03em;
-    font-family: Roboto;
-    left: 2.5em;
-}
-
-#more {
-    position: relative;
-    top: 10em;
-    border-radius: 1em;
-    font-size: xx-large;
-    background-color: #FFB059;
-    border: none;
-    color: white;
-    width: 8em;
-    height: 2em;
-    cursor: pointer;
-    left: 3em;
-}
-
-#more:hover {
-    background-color: orange;
-}
+    .start-window {
+        background-color: #FFEEC3;
+        min-height: 53em;
+        height: 100%;
+    }
+    
+    #start-img {
+        display: flex;
+    }
+    
+    #dashboard {
+        vertical-align: middle;
+    }
+    
+    #pumpkin {
+        position: relative;
+        right: 11em;
+    }
+    
+    #title {
+        position: relative;
+        top: 4em;
+        left: 3em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 53px;
+        line-height: 177.5%;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    
+    #children {
+        position: relative;
+        top: 7em;
+        left: 5.2em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 31px;
+        line-height: 177.5%;
+        letter-spacing: 0.02em;
+        color: #404040;
+    }
+    
+    #more {
+        position: relative;
+        top: 15.5em;
+        border-radius: 2em;
+        font-size: xx-large;
+        background-color: #FFB059;
+        border: none;
+        padding-left: 34px;
+        padding-right: 37px;
+        height: 48px;
+        cursor: pointer;
+        left: -12.5em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    
+    #more:hover {
+        background-color: orange;
+    }
+    
+    .main {
+        width: 82%;
+        height: 55%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .picture {
+        width: 40%;
+        float: left;
+    }
+    
+    .text {
+        width: 60%;
+        float: right;
+    }
+    
+    #go_top {
+        scroll-margin-top: 30px;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    #go_top:hover {}
+    
+    @media screen and (max-width: 600px) {
+        .picture,
+        .text {
+            float: none;
+            width: 100%;
+        }
+        .main {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #title {
+            display: flex;
+            top: 0;
+            left: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 177.5%;
+            letter-spacing: 0.1em;
+        }
+        #children {
+            display: flex;
+            top: 0;
+            padding-top: 1em;
+            left: 30px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 177.5%;
+            letter-spacing: 0.02em;
+        }
+        #pumpkin {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            left: 0;
+        }
+        #more {
+            display: flex;
+            left: 6em;
+            top: 25em;
+        }
+    }
