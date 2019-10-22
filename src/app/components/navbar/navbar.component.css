@@ -18,9 +18,17 @@
 
 .nav-item {
     justify-content: space-between;
+    padding-right: 2em;
 }
 
 .collapse {
     position: absolute;
     right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #first-but {
+        margin-top: 10em;
+        margin-right: 2em;
+    }
 }
