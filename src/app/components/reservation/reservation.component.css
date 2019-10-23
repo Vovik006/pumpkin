@@ -4,17 +4,11 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
-
 }
 
-.form {
-  width: 600px;
+/deep/ body{
+  background:#FFEEC3;
 }
-
-.back {
-  background-color: #FFEEC3;
-}
-
 
 .card {
   border: 0px;
@@ -28,23 +22,16 @@
 
 }
 
-input {
-  border: solid 1px #D7D7D7;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: 67px;
-  margin-top: 36px;
-  margin-bottom: 0px;
+.date{
+  padding-right: 200px;
 }
 
-label {
-  margin-left: 67px;
-  margin-top: 36px;
-  margin-bottom: 0px;
+.color{
+  color: #FF7058;
 }
 
 .card-title {
   margin-top: 16px;
-  text-align: center;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -72,45 +59,8 @@ label {
   background-color: #fff;
 }
 
-select {
-  border: solid 1px #D7D7D7;
-  border-radius: 10px 10px 10px 10px;
-  margin: 10px;
-  margin-left: 67px;
-  margin-top: 36px;
-  margin-bottom: 0px;
-  width: 25vw;
 
-}
-
-#big_input {
-  border-radius: 10px 0px 0px 10px;
-  width: 23vw;
-}
-
-#mar {
-  margin-bottom: 50px;
-}
-
-#second-form-input {
-  border: solid 1px #D7D7D7;
-  border-radius: 10px 10px 10px 10px;
-  width: 437px;
-  height: 36px;
-  margin-top: 23px;
-  width: 25vw;
-}
-
-#second-form-input-1 {
-  border: solid 1px #D7D7D7;
-  border-radius: 10px 10px 10px 10px;
-  width: 437px;
-  height: 36px;
-  margin-top: 30px;
-  width: 25vw;
-}
-
-#button_submit {
+.button_submit {
   width: 232px;
   height: 66px;
   background: #FF7058;
@@ -124,19 +74,25 @@ select {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-button {
-  border-radius: 0px 10px 10px 0px;
-  margin-bottom: 3px;
   border: none;
-  height: 27px;
-  background-color: #D7D7D7;
-  margin-left: 0;
 }
 
 .image {
-  width: 18px;
-  margin-top: -11px;
+  width: 24px;
+  margin-top: -3px;
 }
 
+.custom_btn{
+  border: none;
+  background: #dedede;
+  /*border-top-right-radius: 20px;*/
+  border-top-left-radius: 0;
+  /*border-bottom-right-radius: 20px;*/
+  border-bottom-left-radius: 0;
+}
+.custom_input{
+  border-top-right-radius: 0;
+  /*border-top-left-radius: 20px;*/
+  border-bottom-right-radius: 0;
+  /*border-bottom-left-radius: 20px;*/
+}
