@@ -16,15 +16,19 @@ export class ContactComponent implements OnInit {
     Message: ""
   };
 
-  @ViewChild("eventForm", { static: false }) form: FormGroup;
+  click:boolean = false;
 
   constructor(private ms: MessageService, private router: Router) {}
 
   ngOnInit() {}
 
-  onSubmit(value: ContactUs, valid: boolean) {
-    if (valid) {
-      this.ms.newMessage(value);
+  onSubmit() {
+    this.ms.newMessage(this.message);
+    this.message={
+      Email: "",
+      Name: "",
+      Message: ""
     }
+    this.click=true;
   }
 }
