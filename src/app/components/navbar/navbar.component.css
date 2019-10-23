@@ -1,62 +1,57 @@
-#navbar {
-        background-color: #FFEEC3;
-
-.nav-link {
-    color: black;
-    cursor: pointer;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 22px;
-}
-
-.nav-link:hover {
-    background-color: orange;
-}
-
-.nav-item {
-    justify-content: space-between;
-    padding-right: 2em;
-}
-
-.collapse {
-    position: absolute;
-    right: 0;
-}
-
-@media screen and (max-width: 600px) {
-    #first-but {
-        margin-top: 10em;
-        margin-right: 2em;
-    }
-    
-    .nav-link {
-        color: black;
-        cursor: pointer;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 19px;
-        line-height: 22px;
-    }
-    
-    .nav-link:hover {
-        background-color: orange;
-    }
-    
-    .nav-item {
-        justify-content: space-between;
-        padding-right: 2em;
-    }
-    
-    .collapse {
-        position: absolute;
-        right: 0;
-    }
-    
-    @media screen and (max-width: 600px) {
-        #nav-but {
-            margin-top: 140px;
-        }
-    }
+                #navbar {
+                    background-color: #FFEEC3;
+                }
+                
+                .nav-link {
+                    color: black;
+                    cursor: pointer;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 19px;
+                    line-height: 22px;
+                }
+                
+                .nav-link:hover {
+                    background-color: orange;
+                }
+                
+                .nav-item {
+                    justify-content: space-between;
+                    padding-right: 2em;
+                }
+                
+                .collapse {
+                    position: absolute;
+                    right: 0;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    #first-but {
+                        margin-top: 10em;
+                        margin-right: 2em;
+                    }
+                    .nav-link {
+                        color: black;
+                        cursor: pointer;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 19px;
+                        line-height: 22px;
+                    }
+                    .nav-link:hover {
+                        background-color: orange;
+                    }
+                    .nav-item {
+                        justify-content: space-between;
+                        padding-right: 2em;
+                    }
+                    .collapse {
+                        position: absolute;
+                        right: 0;
+                    }
+                    #nav-but {
+                        margin-top: 140px;
+                    }
+                }

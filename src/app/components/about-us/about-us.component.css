@@ -93,7 +93,6 @@
                 letter-spacing: 0.02em;
                 color: #000000;
                 z-index: 999;
-                position: relative;
                 left: 0;
             }
             #info {
