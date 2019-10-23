@@ -8,7 +8,14 @@
 
         <form class="test ">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Imię" name="Name" [(ngModel)]="message.Name">
+            <input type="text" class="form-control" placeholder="Imię" #Name
+              [ngClass]="{'is-invalid':Name.errors && Name.touched}" name="Name" [(ngModel)]="message.Name" required>
+            <div [hidden]="!clientEmail.errors?.required" class="invalid-feedback">
+              Email is required
+            </div>
+            <div [hidden]="!clientEmail.errors?.pattern" class="invalid-feedback">
+              Email is not valid
+            </div>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" placeholder="Email" name="Email" [(ngModel)]="message.Email">

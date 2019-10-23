@@ -25,7 +25,6 @@ export class ReservationComponent implements OnInit {
   constructor(private es: EventService) {}
 
   ngOnInit() {
-    this.es.getEvents().subscribe(e => console.log(e));
   }
 
   onSubmit() {
