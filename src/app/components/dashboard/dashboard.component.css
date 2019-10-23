@@ -32,6 +32,7 @@
         line-height: 177.5%;
         letter-spacing: 0.1em;
         color: #000000;
+        width: 360px;
     }
     
     #children {
@@ -169,14 +170,12 @@
             letter-spacing: 0.02em;
         }
     }
-
-#but {
-    margin-top:15px;
-    margin-bottom: 15px;
-    margin-left:50vw;
-    text-decoration: underline;
-    color: black;
-    display: block;
-
     
-}
+    #but {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 50vw;
+        text-decoration: underline;
+        color: black;
+        display: block;
+    }
