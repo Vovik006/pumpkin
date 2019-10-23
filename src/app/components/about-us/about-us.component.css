@@ -7,6 +7,7 @@
             position: absolute;
             left: 0;
             background-color: white;
+            z-index: -99;
         }
         
         #about-us-left {
@@ -22,20 +23,10 @@
             border-top-left-radius: 10em;
         }
         
-        #pumpkin-about {
+        #pumpkin_girl {
             margin-bottom: 10em;
             margin-top: 10em;
             position: relative;
-            border: 8px solid black;
-            max-width: 100%;
-            height: auto;
-            width: auto\9;
-        }
-        
-        #pumpkin-girl {
-            margin-left: -5em;
-            position: absolute;
-            margin-top: 15em;
             max-width: 100%;
             height: auto;
             width: auto\9;
@@ -89,7 +80,8 @@
                 color: rgba(0, 0, 0, 0.42);
                 z-index: 999;
                 position: relative;
-                right: 24.4em;
+                left: 0;
+                padding-top: 2em;
             }
             #title {
                 position: relative;
@@ -102,7 +94,7 @@
                 color: #000000;
                 z-index: 999;
                 position: relative;
-                right: 10em;
+                left: 0;
             }
             #info {
                 position: relative;
@@ -113,24 +105,16 @@
                 line-height: 19px;
                 color: rgba(0, 0, 0, 0.65);
                 z-index: 999;
-                position: relative;
-                right: 20em;
+                left: 0em;
             }
-            #pumpkin-about {
-                display: none;
-            }
-            #pumpkin-girl {
+            #pumpkin_girl {
                 display: none;
             }
             #text-about {
                 padding-top: 0;
             }
             #about-us-left {
-                min-height: 25em;
-                width: 80%;
-            }
-            #about-us-right {
-                width: 20%
+                display: none;
             }
         }
         /* Children */
@@ -155,7 +139,7 @@
         #children-know {
             margin-top: 10em;
             min-width: 100%;
-            height: 60em;
+            min-height: 100%;
             background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.16%, rgba(255, 238, 195, 0.7) 95.67%);
             overflow: hidden;
         }
@@ -225,26 +209,6 @@
             letter-spacing: 0.02em;
             display: flex;
             max-width: 10em;
-        }
-        
-        #line-boot {
-            border: 11px solid #000000;
-            transform: rotate(-45deg);
-            position: relative;
-            top: 7em;
-            display: flex;
-            z-index: -1;
-            left: -9em;
-        }
-        
-        #line-boot-right {
-            border: 11px solid #000000;
-            transform: rotate(45deg);
-            position: relative;
-            top: 7em;
-            display: flex;
-            /* z-index: -1; */
-            right: -9em;
         }
         
         #money {
@@ -354,6 +318,11 @@
             justify-content: space-around;
         }
         
+        #circles-down {
+            display: flex;
+            justify-content: space-between;
+        }
+        
         @media screen and (max-width: 600px) {
             .children {
                 font-size: 33px;
@@ -366,5 +335,9 @@
                 text-align: center;
                 letter-spacing: 0.02em;
                 color: #000000;
+            }
+            #circles-down {
+                display: flex;
+                justify-content: center;
             }
         }
