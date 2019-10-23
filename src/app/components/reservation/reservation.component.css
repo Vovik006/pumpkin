@@ -96,3 +96,9 @@
   border-bottom-right-radius: 0;
   /*border-bottom-left-radius: 20px;*/
 }
+
+.moneyCounter {
+  display: block;
+  margin-left: 60vw;
+  margin-top: -40px;
+}
