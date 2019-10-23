@@ -335,8 +335,4 @@
                 letter-spacing: 0.02em;
                 color: #000000;
             }
-            #circles-down {
-                display: flex;
-                justify-content: center;
-            }
         }
