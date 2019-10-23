@@ -1,6 +1,6 @@
 #navbar {
         background-color: #FFEEC3;
-
+}
 .nav-link {
     color: black;
     cursor: pointer;
@@ -60,3 +60,4 @@
             margin-top: 140px;
         }
     }
+}
