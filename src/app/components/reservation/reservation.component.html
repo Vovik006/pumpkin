@@ -42,8 +42,8 @@
                       class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
                 </div>
                 <div class="form-group">
-                  <input type="radio" value="9:15" name="time_1">9:15
-                  <input type="radio" value="10:15" name="time_1">10:15
+                  <input type="radio" value="9:15" [(ngModel)]="event.Time" name="time_1">9:15
+                  <input type="radio" value="10:15" [(ngModel)]="event.Time" name="time_1">10:15
                 </div>
                 <div class="form-group">
                   <input type="button" (click)="Minus()" id="minus" value="-">

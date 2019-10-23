@@ -30,6 +30,7 @@ import { PriceComponent } from './components/price/price.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VideoComponent } from './components/video/video.component';
 import { RegComponent } from './components/reg/reg.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { RegComponent } from './components/reg/reg.component';
     ContactComponent,
     VideoComponent,
     RegComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,15 @@ export class EventsComponent implements OnInit {
 
   constructor(private eventService:EventService) {}
 
+
   ngOnInit() {
     this.eventService.getEvents().subscribe(events => this.events=events);
+
+    this.events.sort((a, b) => {
+      if (a.Date > b.Date) return -1;
+      else if (a.Date < b.Date) return 1;
+      else return 0;
+    });
   }
+  
 }
