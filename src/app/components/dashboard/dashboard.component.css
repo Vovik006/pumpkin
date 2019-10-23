@@ -14,13 +14,17 @@
     
     #pumpkin {
         position: relative;
-        right: 11em;
+        right: 160px;
+        border-radius: 15em;
+        max-width: 200%;
+        height: auto;
+        width: auto\9;
     }
     
     #title {
         position: relative;
-        top: 4em;
-        left: 3em;
+        top: 180px;
+        left: 90px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -32,8 +36,8 @@
     
     #children {
         position: relative;
-        top: 7em;
-        left: 5.2em;
+        top: 190px;
+        left: 92px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -45,7 +49,8 @@
     
     #more {
         position: relative;
-        top: 15.5em;
+        top: 260px;
+        left: 96px;
         border-radius: 2em;
         font-size: xx-large;
         background-color: #FFB059;
@@ -54,7 +59,6 @@
         padding-right: 37px;
         height: 48px;
         cursor: pointer;
-        left: -12.5em;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -85,8 +89,11 @@
     }
     
     .text {
-        width: 60%;
+        width: auto\9;
+        height: auto;
         float: right;
+        max-width: 60%;
+        display: block;
     }
     
     #go_top {
@@ -123,7 +130,7 @@
         }
         #title {
             display: flex;
-            top: 0;
+            top: 80px;
             left: 30px;
             font-family: Roboto;
             font-style: normal;
@@ -134,9 +141,9 @@
         }
         #children {
             display: flex;
-            top: 0;
-            padding-top: 1em;
+            top: 70px;
             left: 30px;
+            padding-top: 1em;
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
@@ -152,8 +159,14 @@
         }
         #more {
             display: flex;
-            left: 6em;
-            top: 25em;
+            top: 500px;
+            left: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 177.5%;
+            letter-spacing: 0.02em;
         }
     }
 
