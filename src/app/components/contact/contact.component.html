@@ -1,57 +1,54 @@
 <div class="bg-tint pb-5">
-  <<<<<<< HEAD <div id="contact" class="text-center display_font pt-4 pb-5">
+  <div id="contact" class="text-center display_font pt-4 pb-5">
     <h2>Skontaktuj się</h2>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
 
-      <form #messageForm="ngForm" (ngSubmit)="onSubmit(messageForm)" class="test ">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Imię" name="Name" [(ngModel)]="message.Name">
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" placeholder="Email" name="Email" [(ngModel)]="message.Email">
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" id="exampleFormControlTextarea1" name="Message" placeholder="Wiadomość"
-            rows="3" [(ngModel)]="message.Message"></textarea>
-        </div>
+        <form class="test ">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Imię" name="Name" [(ngModel)]="message.Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" name="Email" [(ngModel)]="message.Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="Message" placeholder="Wiadomość"
+              rows="3" [(ngModel)]="message.Message"></textarea>
+          </div>
+          <button type="submit" [disabled]="click" [ngClass]="{'btn-custom': click}" (click)="onSubmit()"
+            class=" btn btn-red mr-auto">Wysłać</button>
+        </form>
 
-        <button type="submit" class="btn btn-red  mr-auto">Wysłać</button>
-
-      </form>
-
-
-
-    </div>
-    <div class="col-md-6">
-
-      <div class="email row ml-5">
-        <img class="pb-3 pr-4" src="../../../assets/img/email.svg" alt="Email">
-        <div class="text">
-          <h3>Email:</h3>
-          <p>biuro@farmadyn.pl</p>
-        </div>
       </div>
-      <div class="adres row  ml-5 pt-4">
-        <img class="pb-3 pr-4" src="../../../assets/img/spot.svg" alt="Localisation">
-        <div class="text">
-          <h3>Adres:</h3>
-          <p>Warszawa, ul.Przyczółkowa 2k</p>
-        </div>
-      </div>
-      <div class="telefon row ml-5 pt-4">
-        <img class="pb-3 pr-4" src="../../../assets/img/phone.svg" alt="Phone">
-        <div class="text">
-          <h3>Telefon:</h3>
-          <p>692-992-589 / 506-441-403</p>
-        </div>
-      </div>
+      <div class="col-md-6">
 
+        <div class="email row ml-5">
+          <img class="pb-3 pr-4" src="../../../assets/img/email.svg" alt="Email">
+          <div class="text">
+            <h3>Email:</h3>
+            <p>biuro@farmadyn.pl</p>
+          </div>
+        </div>
+        <div class="adres row  ml-5 pt-4">
+          <img class="pb-3 pr-4" src="../../../assets/img/spot.svg" alt="Localisation">
+          <div class="text">
+            <h3>Adres:</h3>
+            <p>Warszawa, ul.Przyczółkowa 2k</p>
+          </div>
+        </div>
+        <div class="telefon row ml-5 pt-4">
+          <img class="pb-3 pr-4" src="../../../assets/img/phone.svg" alt="Phone">
+          <div class="text">
+            <h3>Telefon:</h3>
+            <p>692-992-589 / 506-441-403</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 <div class=" m-0 p-0">
