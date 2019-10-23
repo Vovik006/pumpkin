@@ -169,3 +169,14 @@
             letter-spacing: 0.02em;
         }
     }
+
+#but {
+    margin-top:15px;
+    margin-bottom: 15px;
+    margin-left:50vw;
+    text-decoration: underline;
+    color: black;
+    display: block;
+
+    
+}

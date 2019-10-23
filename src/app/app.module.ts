@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
@@ -28,6 +29,8 @@ import { ProgramComponent } from './components/program/program.component';
 import { PriceComponent } from './components/price/price.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VideoComponent } from './components/video/video.component';
+import { RegComponent } from './components/reg/reg.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -47,9 +50,12 @@ import { VideoComponent } from './components/video/video.component';
     PriceComponent,
     ContactComponent,
     VideoComponent,
+    RegComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase, "Calendar"),
