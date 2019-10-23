@@ -1,109 +1,109 @@
-<div class="back pb-5">
+<div class="pb-5">
   <app-navbar></app-navbar>
   <h1 class="head">Rezerwacja</h1>
-  <div class="container">
+  <div class="container pb-3">
     <div class="row justify-content-center">
-      <div class="card">
-        <div class="header_card">
-          <h3 class="card-title">Opcje</h3>
+      <div class="card pb-5 pt-3">
+        <div class="header_card pb-4">
+          <h3 class="card-title text-center">Opcje</h3>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="form_1">
-              <div class="form-group">
-                <label>Opcje:</label>
-              </div>
-              <div class="form-group">
-                <label>Wybierz dzień:</label>
-              </div>
-              <div class="form-group">
-                <label>Wybierz godzinę:</label>
-              </div>
-              <div class="form-group">
-                <label id="mar">Ilość dzieci:</label>
+        <div class="container">
+
+
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+            <label class="col-sm-3 col-form-label">Opcje:</label>
+            <div class="col-sm-6">
+              <div class="row select-wrapper">
+                <select class="form-control col-10 custom_radius" placeholder="Wybież typ wycieczki" name="type"
+                  [(ngModel)]="event.Type">
+                  <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
+                  <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
+                  <option value="Urodziny">Urodziny</option>
+                </select>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="form">
-              <div class="helper">
-                <div class="form-group">
-                  <select name="type" [(ngModel)]="event.Type">
-                    <!-- <option>--wybierz--</option> -->
-                    <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
-                    <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
-                    <option value="Urodziny">Urodziny</option>
-                  </select>
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+            <label class="col-sm-3 col-form-label">Wybierz dzień:</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <input class="form-control col-8 custom_input" placeholder="dd-mm-yyyy" name="dp"
+                  [(ngModel)]="event.Date" ngbDatepicker #d="ngbDatepicker">
+                <button class="btn custom_btn btn-outline-secondary col-2" (click)="d.toggle()" type="button">
+                  <img class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+            <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Wybierz godzinę:</label>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" name="Video_Killed_The_Radio_Star" type="radio" value="9:15">
+                  <label class="form-check-label">&nbsp;9:15</label>
                 </div>
-                <div class="form-group">
-                  <input id="big_input" placeholder="dd-mm-yyyy" name="dp" [(ngModel)]="event.Date" ngbDatepicker
-                    #d="ngbDatepicker">
-                  <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><img
-                      class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
-                </div>
-                <div class="form-group">
-                  <input type="radio" value="9:15" [(ngModel)]="event.Time" name="time_1">9:15
-                  <input type="radio" value="10:15" [(ngModel)]="event.Time" name="time_1">10:15
-                </div>
-                <div class="form-group">
-                  <input type="button" (click)="Minus()" id="minus" value="-">
-                  {{counter}}
-                  <input type="button" (click)="Plus()" id="plus" value="+">
+                <div class="form-check form-check-inline pl-5">
+                  <input class="form-check-input" name="Video_Killed_The_Radio_Star" type="radio" value="10:15">
+                  <label class="form-check-label">&nbsp;10:15</label>
                 </div>
               </div>
+            </div>
+
+          </div>
+          <div class="form-group row justify-content-center pl-4 pl-sm-0">
+            <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Ilość dzieci:</label>
+
+            <div class="col-sm-6 p-0">
+              <input class="color" type="button" (click)="Minus()" id="minus" value="-">
+              {{counter}}
+              <input class="color" type="button" (click)="Plus()" id="plus" value="+">
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="row justify-content-center">
-      <div class="card">
-        <div class="header_card">
-          <h3 class="card-title">Dane kontaktowe</h3>
+      <div class="card pb-5 pt-3">
+        <div class="header_card pb-4">
+          <h3 class="card-title text-center">Dane kontaktowe</h3>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="form_1">
-              <div class="form-group">
-                <label>Imię lub Nazwa placówki:</label>
-              </div>
-              <div class="form-group">
-                <label>Nazwisko:</label>
-              </div>
-              <div class="form-group">
-                <label>Telefon kontaktowy:</label>
-              </div>
-              <div class="form-group">
-                <label>Email:</label>
-              </div>
-              <div class="form-group">
-                <label id="mar">Powtórz email:</label>
-              </div>
+        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+          <label class="col-sm-3 col-form-label">Imię lub Nazwa placówki:</label>
+          <div class="col-sm-6">
+            <div class="row select-wrapper">
+              <input class="form-control" type="text" [(ngModel)]="event.FirstName">
             </div>
           </div>
-          <div class="col-6">
-            <div class="form">
-              <div class="form-group">
-                <input id="second-form-input-1" type="text" [(ngModel)]="event.FirstName">
-              </div>
-              <div class="form-group">
-                <input id="second-form-input" type="text" [(ngModel)]="event.LastName">
-              </div>
-              <div class="form-group">
-                <input id="second-form-input" type="text" [(ngModel)]="event.Phone">
-              </div>
-              <div class="form-group">
-                <input id="second-form-input" type="text" [(ngModel)]="event.Email">
-              </div>
-              <div class="form-group">
-                <input id="second-form-input" type="text">
-              </div>
+        </div>
+        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+          <label class="col-sm-3 col-form-label">Nazwisko:</label>
+          <div class="col-sm-6">
+            <div class="row select-wrapper">
+              <input class="form-control" type="text" [(ngModel)]="event.LastName">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+          <label class="col-sm-3 col-form-label">Telefon kontaktowy:</label>
+          <div class="col-sm-6">
+            <div class="row select-wrapper">
+              <input class="form-control" type="text" [(ngModel)]="event.Phone">
+            </div>
+          </div>
+        </div>
+        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+          <label class="col-sm-3 col-form-label">Powtórz email:</label>
+          <div class="col-sm-6">
+            <div class="row select-wrapper">
+              <input class="form-control" type="text" [(ngModel)]="event.Email">
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <input type="submit" value="Rezerwacja" id="button_submit" (click)="onSubmit()">
+  <input type="submit" value="Rezerwacja" class="button_submit" (click)="onSubmit()">
 </div>
