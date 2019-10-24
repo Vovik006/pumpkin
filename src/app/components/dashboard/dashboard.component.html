@@ -7,7 +7,7 @@
         <div class="text">
             <div id="title"> Największy wybór dyń</div>
             <div id="children"> Dzieci uwielbiają to miejsce!</div>
-            <div href="#o-nas"><button id="more">Zobacz więcej</button></div>
+            <a href="#o-nas"><button id="more">Zobacz więcej</button></a>
         </div>
         <button id="go_top" *ngIf="isShow" (click)="gototop()"><img id="arrow" src="../../../assets/img/expand-arrow.svg" alt=""></button>
     </div>
@@ -16,4 +16,4 @@
 <app-program></app-program>
 <app-video></app-video>
 <app-contact></app-contact>
-<footer><a id="but"  routerLink="/reg">Regulamin</a></footer>
+<footer><a id="but" routerLink="/reg">Regulamin</a></footer>

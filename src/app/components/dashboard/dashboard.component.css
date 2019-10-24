@@ -15,7 +15,6 @@
     #pumpkin {
         position: relative;
         right: 160px;
-        border-radius: 15em;
         max-width: 200%;
         height: auto;
         width: auto\9;
@@ -118,7 +117,7 @@
         opacity: 0.25;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 710px) {
         .picture,
         .text {
             float: none;
@@ -138,7 +137,9 @@
             font-size: 30px;
             line-height: 177.5%;
             letter-spacing: 0.1em;
-            width: 360px;
+            width: 180%;
+            margin: 0 auto;
+            transform: translate(0%, -20%);
         }
         #children {
             display: flex;
@@ -151,23 +152,25 @@
             font-size: 18px;
             line-height: 177.5%;
             letter-spacing: 0.02em;
+            margin: 0 auto;
+            transform: translate(0%, -10%);
         }
         #pumpkin {
             max-width: 100%;
             height: auto;
             width: auto\9;
-            left: 0;
+            left: 3px;
         }
         #more {
             display: flex;
-            top: 500px;
-            left: 100px;
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 177.5%;
             letter-spacing: 0.02em;
+            transform: translate(0%, 650%);
+            margin: 0 auto;
         }
     }
     
