@@ -39,7 +39,6 @@
                        font-weight: 500;
                        font-size: 19px;
                        line-height: 22px;
-                       display: none;
                    }
                    .nav-link:hover {
                        background-color: orange;
