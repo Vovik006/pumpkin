@@ -86,7 +86,6 @@
             #title {
                 position: relative;
                 border: 0;
-                text-decoration: underline #FFEEC3;
                 font-family: Times;
                 font-size: 33px;
                 line-height: 38px;
@@ -111,9 +110,14 @@
             }
             #text-about {
                 padding-top: 0;
+                transform: translate(-120%, -4%);
+                z-index: 999;
+            }
+            #about-us {
+                width: 150%;
             }
             #about-us-left {
-                display: none;
+                z-index: -1;
             }
         }
         /* Children */
@@ -320,6 +324,16 @@
         #circles-down {
             display: flex;
             justify-content: space-between;
+        }
+        
+        #line1 {
+            stroke: black;
+            stroke-width: 15px;
+        }
+        
+        #line2 {
+            stroke: black;
+            stroke-width: 15px;
         }
         
         @media screen and (max-width: 700px) {
