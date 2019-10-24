@@ -14,7 +14,7 @@
             <label class="col-sm-3 col-form-label">Opcje:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <select class="form-control col-10 custom_radius" placeholder="Wybież typ wycieczki" name="type"
+                <select (click)="Option()" class="form-control col-10 custom_radius" placeholder="Wybież typ wycieczki" name="type"
                   [(ngModel)]="event.Type">
                   <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
                   <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
@@ -106,4 +106,5 @@
     </div>
   </div>
   <input type="submit" value="Rezerwacja" class="button_submit" (click)="onSubmit()">
+  <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 </div>
