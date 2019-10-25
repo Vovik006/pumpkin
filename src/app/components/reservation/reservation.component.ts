@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { Event } from "../../_models/Event";
 import { EventService } from "../../_services/event.service";
+import { Router } from "@angular/router";
+import { FlashMessagesService } from "angular2-flash-messages";
+import { FormGroup, FormBuilder, Validators, FormControl } from "@angular/forms";
 
 @Component({
   selector: "app-reservation",
@@ -11,6 +14,7 @@ export class ReservationComponent implements OnInit {
   counter: number = 0;
   moneyCounter: number = 0;
   showMoneyCounter: boolean;
+  buttonRez: boolean=false;
   event: Event = {
     Type: "",
     Date: new Date(),
@@ -24,13 +28,38 @@ export class ReservationComponent implements OnInit {
   };
   today: Date = new Date();
 
-  constructor(private es: EventService) {}
+  eventForm: FormGroup;
 
-  ngOnInit() {}
+  constructor(
+    private es: EventService,
+    private router: Router,
+    private flashMessage: FlashMessagesService,
+    private formBuilder: FormBuilder
+  ) {}
+
+  ngOnInit() {
+    // this.eventForm = new FormGroup({
+    //   FirstName: new FormControl,
+    //   LastName: ["", Validators.required],
+    //   Email: ["", [Validators.required, Validators.email]],
+    //   Phone: ["", [Validators.required, Validators.minLength(6)]]
+    // });
+    // if(this.eventForm.valid){
+    //   this.buttonRez=true;
+    // }
+  }
 
   onSubmit() {
-    this.event.AmountOfPeople = this.counter;
-    this.es.newEvent(this.event);
+    // if (this.eventForm.valid) {
+      this.event.AmountOfPeople = this.counter;
+      this.es.newEvent(this.event);
+      // window.location.href = "/";
+      this.flashMessage.show("New client added", {
+        cssClass: "alert-success",
+        timeout: 40000000
+      });
+      this.router.navigate(["/"]);
+    
   }
   Plus() {
     this.counter = this.counter + 1;
@@ -80,10 +109,12 @@ export class ReservationComponent implements OnInit {
 
   Option() {
     if (this.event.Type === "Wycieczka farma dyń") {
-      this.counter = 0;
-      this.moneyCounter = 0;
-    } else if (this.event.Type === "Wycieczka farma dyń z jedzeniem") {
-    } else if (this.event.Type === "Urodziny") {
+      this.moneyCounter = 45 * this.counter;
+    } else if (
+      this.event.Type === "Wycieczka farma dyń z jedzeniem" ||
+      this.event.Type === "Urodziny"
+    ) {
+      this.moneyCounter = 55 * this.counter;
     }
   }
 }

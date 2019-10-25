@@ -1,0 +1,6 @@
+.test{
+    position: absolute;
+    padding-top: 350px;
+    z-index: 999;
+    text-align: center;
+}

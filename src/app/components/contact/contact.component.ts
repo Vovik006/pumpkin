@@ -24,11 +24,7 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.ms.newMessage(this.message);
-    this.message={
-      Email: "",
-      Name: "",
-      Message: ""
-    }
     this.click=true;
+    window.location.reload();
   }
 }

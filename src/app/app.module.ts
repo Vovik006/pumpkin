@@ -31,6 +31,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { VideoComponent } from './components/video/video.component';
 import { RegComponent } from './components/reg/reg.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     VideoComponent,
     RegComponent,
     NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,10 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,                               
+    ReactiveFormsModule,
+    FlashMessagesModule.forRoot()
   ],
   providers: [EventService],
   bootstrap: [AppComponent]

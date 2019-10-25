@@ -1,110 +1,133 @@
-<div class="pb-5">
+<div class="pb-5 k">
   <app-navbar></app-navbar>
   <h1 class="head">Rezerwacja</h1>
-  <div class="container pb-3">
-    <div class="row justify-content-center">
-      <div class="card pb-5 pt-3">
-        <div class="header_card pb-4">
-          <h3 class="card-title text-center">Opcje</h3>
+    <div class="container pb-3">
+      <div class="row justify-content-center">
+        <div class="card pb-5 pt-3">
+          <div class="header_card pb-4">
+            <h3 class="card-title text-center">Opcje</h3>
+          </div>
+          <div class="container">
+            <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+              <label class="col-sm-3 col-form-label">Opcje:</label>
+              <div class="col-sm-6">
+                <div class="row select-wrapper">
+                  <select (click)="Option()" class="form-control col-10 custom_radius"
+                    placeholder="Wybież typ wycieczki" name="type" [(ngModel)]="event.Type">
+                    <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
+                    <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
+                    <option value="Urodziny">Urodziny</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+              <label class="col-sm-3 col-form-label">Wybierz dzień:</label>
+              <div class="col-sm-6">
+                <div class="row">
+                  <input class="form-control col-8 custom_input" placeholder="dd-mm-yyyy" name="dp"
+                    [(ngModel)]="event.Date" ngbDatepicker #d="ngbDatepicker">
+                  <button class="btn custom_btn btn-outline-secondary col-2" (click)="d.toggle()" type="button">
+                    <img class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
+              <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Wybierz godzinę:</label>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star"
+                      type="radio" value="9:15">
+                    <label class="form-check-label">&nbsp;9:15</label>
+                  </div>
+                  <div class="form-check form-check-inline pl-5">
+                    <input class="form-check-input" [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star"
+                      type="radio" value="10:15">
+                    <label class="form-check-label">&nbsp;10:15</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="form-group row justify-content-center pl-4 pl-sm-0">
+              <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Ilość dzieci:</label>
+
+              <div class="col-sm-6 p-0">
+                <input class="color" type="button" (click)="Minus()" id="minus" value="-">
+                {{counter}}
+                <input class="color" type="button" (click)="Plus()" id="plus" value="+">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container">
-
-
-          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
-            <label class="col-sm-3 col-form-label">Opcje:</label>
+      </div>
+      <div class="row justify-content-center">
+        <div class="card pb-5 pt-3">
+          <div class="header_card pb-4">
+            <h3 class="card-title text-center">Dane kontaktowe</h3>
+          </div>
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+            <label class="col-sm-3 col-form-label">Imię lub Nazwa placówki:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <select (click)="Option()" class="form-control col-10 custom_radius" placeholder="Wybież typ wycieczki" name="type"
-                  [(ngModel)]="event.Type">
-                  <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
-                  <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
-                  <option value="Urodziny">Urodziny</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
-            <label class="col-sm-3 col-form-label">Wybierz dzień:</label>
-            <div class="col-sm-6">
-              <div class="row">
-                <input class="form-control col-8 custom_input" placeholder="dd-mm-yyyy" name="dp"
-                  [(ngModel)]="event.Date" ngbDatepicker #d="ngbDatepicker">
-                <button class="btn custom_btn btn-outline-secondary col-2" (click)="d.toggle()" type="button">
-                  <img class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
-              </div>
-
-            </div>
-
-          </div>
-          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0">
-            <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Wybierz godzinę:</label>
-            <div class="col-sm-6">
-              <div class="row">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input"  [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star" type="radio" value="9:15">
-                  <label class="form-check-label">&nbsp;9:15</label>
-                </div>
-                <div class="form-check form-check-inline pl-5">
-                  <input class="form-check-input" [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star" type="radio" value="10:15">
-                  <label class="form-check-label">&nbsp;10:15</label>
+                <input class="form-control" formControlName="val.FirstName" 
+                  [ngClass]="{'is-invalid':FirstName.errors && FirstName.touched}" type="text"
+                  [(ngModel)]="event.FirstName" required>
+                <div [hidden]="!FirstName.errors?.required" class="invalid-feedback">
+                  Imię jest wymagane
                 </div>
               </div>
             </div>
-
           </div>
-          <div class="form-group row justify-content-center pl-4 pl-sm-0">
-            <label class="col-sm-3 col-form-label pb-3 pb-sm-0">Ilość dzieci:</label>
-
-            <div class="col-sm-6 p-0">
-              <input class="color" type="button" (click)="Minus()" id="minus" value="-">
-              {{counter}}
-              <input class="color" type="button" (click)="Plus()" id="plus" value="+">
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+            <label class="col-sm-3 col-form-label">Nazwisko:</label>
+            <div class="col-sm-6">
+              <div class="row select-wrapper">
+                <input class="form-control" formControlName="val.LastName" 
+                  [ngClass]="{'is-invalid':LastName.errors && LastName.touched}" type="text"
+                  [(ngModel)]="event.LastName" required>
+                <div [hidden]="!LastName.errors?.required" class="invalid-feedback">
+                  Nazwisko jest wymagana
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+            <label class="col-sm-3 col-form-label">Telefon kontaktowy:</label>
+            <div class="col-sm-6">
+              <div class="row select-wrapper">
+                <input class="form-control" formControlName="val.Phone" [ngClass]="{'is-invalid':Phone.errors && Phone.touched}"
+                  type="text" [(ngModel)]="event.Phone" required>
+                <div [hidden]="!LastName.errors?.required" class="invalid-feedback">
+                  Telefon kontaktowy jest wymagany
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
+            <label class="col-sm-3 col-form-label">Email:</label>
+            <div class="col-sm-6">
+              <div class="row select-wrapper">
+                <input  formControlName="val.Email" [ngClass]="{'is-invalid':Email.errors && Email.touched}"
+                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                  class="form-control" type="email" [(ngModel)]="event.Email" required>
+                <div [hidden]="!Email.errors?.pattern" class="invalid-feedback">
+                  Email jest niepoprawny
+                </div>
+                <div [hidden]="!Email.errors?.required" class="invalid-feedback">
+                  Email jest wymagany
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <input [ngClass]="{'but-cus':!buttonRez}" [disabled]="!buttonRez" type="submit" value="Rezerwacja"
+      class="button_submit">
+    <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 
-    <div class="row justify-content-center">
-      <div class="card pb-5 pt-3">
-        <div class="header_card pb-4">
-          <h3 class="card-title text-center">Dane kontaktowe</h3>
-        </div>
-        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
-          <label class="col-sm-3 col-form-label">Imię lub Nazwa placówki:</label>
-          <div class="col-sm-6">
-            <div class="row select-wrapper">
-              <input class="form-control" type="text" [(ngModel)]="event.FirstName">
-            </div>
-          </div>
-        </div>
-        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
-          <label class="col-sm-3 col-form-label">Nazwisko:</label>
-          <div class="col-sm-6">
-            <div class="row select-wrapper">
-              <input class="form-control" type="text" [(ngModel)]="event.LastName">
-            </div>
-          </div>
-        </div>
-        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
-          <label class="col-sm-3 col-form-label">Telefon kontaktowy:</label>
-          <div class="col-sm-6">
-            <div class="row select-wrapper">
-              <input class="form-control" type="text" [(ngModel)]="event.Phone">
-            </div>
-          </div>
-        </div>
-        <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
-          <label class="col-sm-3 col-form-label">Powtórz email:</label>
-          <div class="col-sm-6">
-            <div class="row select-wrapper">
-              <input class="form-control" type="text" [(ngModel)]="event.Email">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <input type="submit" value="Rezerwacja" class="button_submit" (click)="onSubmit()">
-  <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 </div>

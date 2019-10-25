@@ -6,7 +6,7 @@
   line-height: 23px;
 }
 
-/deep/ body{
+.k{
   background:#FFEEC3;
 }
 
@@ -101,4 +101,21 @@
   display: block;
   margin-left: 60vw;
   margin-top: -40px;
+}
+
+.but-cus {
+  width: 232px;
+  height: 66px;
+  background:darkgray;
+  border-radius: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  color: lightgrey;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 }
