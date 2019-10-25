@@ -31,6 +31,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { VideoComponent } from './components/video/video.component';
 import { RegComponent } from './components/reg/reg.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CirclesComponent } from './components/circles/circles.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     VideoComponent,
     RegComponent,
     NotFoundComponent,
+    CirclesComponent,
   ],
   imports: [
     BrowserModule,
