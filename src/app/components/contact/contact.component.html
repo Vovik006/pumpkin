@@ -8,14 +8,31 @@
 
         <form class="test ">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Imię" name="Name" [(ngModel)]="message.Name">
+            <input type="text" class="form-control" placeholder="Imię" #Name="ngModel"
+              [ngClass]="{'is-invalid':Name.errors && Name.touched}" name="Name" [(ngModel)]="message.Name" required>
+            <div [hidden]="!Name.errors?.required" class="invalid-feedback">
+              Imię jest wymagane
+            </div>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email" name="Email" [(ngModel)]="message.Email">
+            <input type="email" class="form-control" placeholder="Email" #Email="ngModel"
+              [ngClass]="{'is-invalid':Email.errors && Email.touched}" name="Email" [(ngModel)]="message.Email"
+              pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+              required>
+            <div [hidden]="!Email.errors?.required" class="invalid-feedback">
+              Email jest wymagany
+            </div>
+            <div [hidden]="!Email.errors?.pattern" class="invalid-feedback">
+              Email jest nie poprawny
+            </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" name="Message" placeholder="Wiadomość"
-              rows="3" [(ngModel)]="message.Message"></textarea>
+            <textarea class="form-control" #Message="ngModel"
+              [ngClass]="{'is-invalid':Message.errors && Message.touched}" id="exampleFormControlTextarea1"
+              name="Message" placeholder="Wiadomość" rows="3" [(ngModel)]="message.Message" required></textarea>
+            <div [hidden]="!Message.errors?.required" class="invalid-feedback">
+              Wiadomość jest wymagana
+            </div>
           </div>
           <button type="submit" [disabled]="click" [ngClass]="{'btn-custom': click}" (click)="onSubmit()"
             class=" btn btn-red mr-auto">Wysłać</button>
