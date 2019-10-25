@@ -1,5 +1,6 @@
         #about-us {
             width: 100%;
+            overflow-x: hidden;
         }
         
         .corner {
@@ -18,7 +19,6 @@
         }
         
         #about-us-right {
-            max-height: 40em;
             width: 40%;
             border-top-left-radius: 10em;
         }
@@ -110,14 +110,14 @@
             }
             #text-about {
                 padding-top: 0;
-                transform: translate(-120%, -4%);
                 z-index: 999;
-            }
-            #about-us {
-                width: 150%;
             }
             #about-us-left {
                 z-index: -1;
+                max-width: 10%;
+            }
+            #about-us-right {
+                width: 90%;
             }
         }
         /* Children */
@@ -275,16 +275,6 @@
             max-width: 10em;
         }
         
-        #line-cow {
-            border: 11px solid #000000;
-            transform: rotate(45deg);
-            position: relative;
-            top: 7em;
-            display: flex;
-            z-index: -1;
-            right: -9em;
-        }
-        
         #vegetables {
             background: white;
             width: 20em;
@@ -326,14 +316,28 @@
             justify-content: space-between;
         }
         
-        #line1 {
+        #line-flower {
             stroke: black;
             stroke-width: 15px;
+            transform: rotate(15deg);
         }
         
-        #line2 {
+        #line-boot {
             stroke: black;
             stroke-width: 15px;
+            transform: rotate(-10deg);
+        }
+        
+        #line-cow {
+            stroke: black;
+            stroke-width: 15px;
+            transform: rotate(15deg);
+        }
+        
+        #line-vege {
+            stroke: black;
+            stroke-width: 15px;
+            transform: rotate(-10deg);
         }
         
         @media screen and (max-width: 700px) {
@@ -349,4 +353,22 @@
                 letter-spacing: 0.02em;
                 color: #000000;
             }
+        }
+        
+        @media screen and (max-width: 1050px) {
+            #line-flower {
+                display: none;
+            }
+            #line-boot {
+                display: none;
+            }
+            #line-cow {
+                display: none;
+            }
+            #line-vege {
+                display: none;
+            }
+            /* #circles {
+                transform: rotate(-90deg);
+            } */
         }
