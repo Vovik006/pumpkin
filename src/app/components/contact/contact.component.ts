@@ -13,7 +13,8 @@ export class ContactComponent implements OnInit {
   message: ContactUs = {
     Email: "",
     Name: "",
-    Message: ""
+    Message: "",
+    Checked:false
   };
 
   click:boolean = false;
