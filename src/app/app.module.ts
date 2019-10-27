@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { environment } from "../environments/environment";
 import { AngularFireModule } from "@angular/fire";
@@ -25,14 +25,16 @@ import { ANavbarComponent } from "./components/admin/a-navbar/a-navbar.component
 import { EventsComponent } from "./components/admin/events/events.component";
 import { AMessagesComponent } from "./components/admin/a-messages/a-messages.component";
 
-import { ProgramComponent } from './components/program/program.component';
-import { PriceComponent } from './components/price/price.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { VideoComponent } from './components/video/video.component';
-import { RegComponent } from './components/reg/reg.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { FlashMessagesModule } from 'angular2-flash-messages';
+import { ProgramComponent } from "./components/program/program.component";
+import { PriceComponent } from "./components/price/price.component";
+import { ContactComponent } from "./components/contact/contact.component";
+import { VideoComponent } from "./components/video/video.component";
+import { RegComponent } from "./components/reg/reg.component";
+import { NotFoundComponent } from "./components/not-found/not-found.component";
 
+import { FlashMessagesModule } from "angular2-flash-messages";
+
+import { CirclesComponent } from "./components/circles/circles.component";
 
 @NgModule({
   declarations: [
@@ -53,7 +55,7 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
     VideoComponent,
     RegComponent,
     NotFoundComponent,
-
+    CirclesComponent
   ],
   imports: [
     BrowserModule,

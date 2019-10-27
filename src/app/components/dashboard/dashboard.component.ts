@@ -1,3 +1,4 @@
+
 import { Component, OnInit, HostListener } from "@angular/core";
 
 @Component({
@@ -36,5 +37,6 @@ export class DashboardComponent implements OnInit {
       left: 0,
       behavior: "smooth"
     });
-  }
 }
+}
+
