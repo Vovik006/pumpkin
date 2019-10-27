@@ -1,6 +1,7 @@
 <div class="pb-5 k">
   <app-navbar></app-navbar>
   <h1 class="head">Rezerwacja</h1>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
     <div class="container pb-3">
       <div class="row justify-content-center">
         <div class="card pb-5 pt-3">
@@ -12,8 +13,8 @@
               <label class="col-sm-3 col-form-label">Opcje:</label>
               <div class="col-sm-6">
                 <div class="row select-wrapper">
-                  <select (click)="Option()" class="form-control col-10 custom_radius"
-                    placeholder="Wybież typ wycieczki" name="type" [(ngModel)]="event.Type">
+                  <select (click)="Option()" formControlName="type" [formControl]="eventForm.get('type')"
+                    class="form-control col-10 custom_radius" name="type">
                     <option value="Wycieczka farma dyń">Wycieczka farma dyń</option>
                     <option value="Wycieczka farma dyń z jedzeniem">Wycieczka farma dyń z jedzeniem</option>
                     <option value="Urodziny">Urodziny</option>
@@ -25,8 +26,10 @@
               <label class="col-sm-3 col-form-label">Wybierz dzień:</label>
               <div class="col-sm-6">
                 <div class="row">
-                  <input class="form-control col-8 custom_input" placeholder="dd-mm-yyyy" name="dp"
-                    [(ngModel)]="event.Date" ngbDatepicker #d="ngbDatepicker">
+                  <input class="form-control col-8 custom_input" formControlName="date"
+                    [formControl]="eventForm.get('date')" 
+                    [minDate]="minDate" [markDisabled]="markDisabled" placeholder="dd-mm-yyyy" name="dp"
+                    ngbDatepicker #d="ngbDatepicker">
                   <button class="btn custom_btn btn-outline-secondary col-2" (click)="d.toggle()" type="button">
                     <img class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
                 </div>
@@ -39,12 +42,12 @@
               <div class="col-sm-6">
                 <div class="row">
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star"
+                    <input class="" formControlName="time" [formControl]="eventForm.get('time')" name="time"
                       type="radio" value="9:15">
                     <label class="form-check-label">&nbsp;9:15</label>
                   </div>
                   <div class="form-check form-check-inline pl-5">
-                    <input class="form-check-input" [(ngModel)]="event.Time" name="Video_Killed_The_Radio_Star"
+                    <input class="" formControlName="time" [formControl]="eventForm.get('time')" name="time"
                       type="radio" value="10:15">
                     <label class="form-check-label">&nbsp;10:15</label>
                   </div>
@@ -73,24 +76,25 @@
             <label class="col-sm-3 col-form-label">Imię lub Nazwa placówki:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <input class="form-control" formControlName="val.FirstName" 
-                  [ngClass]="{'is-invalid':FirstName.errors && FirstName.touched}" type="text"
-                  [(ngModel)]="event.FirstName" required>
-                <div [hidden]="!FirstName.errors?.required" class="invalid-feedback">
+                <input class="form-control" type="text" formControlName="firstName"
+                  [formControl]="eventForm.get('firstName')"
+                  [ngClass]="{ 'is-invalid': eventForm.controls.firstName.touched && eventForm.controls.firstName.errors }">
+                <div [hidden]="!eventForm.controls.firstName.errors?.required" class="invalid-feedback">
                   Imię jest wymagane
                 </div>
               </div>
+
             </div>
           </div>
           <div class="form-group row justify-content-center pb-2 pl-4 pl-sm-0 pr-4 pr-sm-0">
             <label class="col-sm-3 col-form-label">Nazwisko:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <input class="form-control" formControlName="val.LastName" 
-                  [ngClass]="{'is-invalid':LastName.errors && LastName.touched}" type="text"
-                  [(ngModel)]="event.LastName" required>
-                <div [hidden]="!LastName.errors?.required" class="invalid-feedback">
-                  Nazwisko jest wymagana
+                <input class="form-control" [formControl]="eventForm.get('lastName')"
+                  [ngClass]="{ 'is-invalid': eventForm.controls.lastName.touched && eventForm.controls.lastName.errors }"
+                  name="lastName" type="text" formControlName="lastName">
+                <div [hidden]="!eventForm.controls.lastName.errors?.required" class="invalid-feedback">
+                  Nazwisko jest wymagane
                 </div>
               </div>
             </div>
@@ -99,9 +103,10 @@
             <label class="col-sm-3 col-form-label">Telefon kontaktowy:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <input class="form-control" formControlName="val.Phone" [ngClass]="{'is-invalid':Phone.errors && Phone.touched}"
-                  type="text" [(ngModel)]="event.Phone" required>
-                <div [hidden]="!LastName.errors?.required" class="invalid-feedback">
+                <input class="form-control" [formControl]="eventForm.get('phone')"
+                  [ngClass]="{ 'is-invalid': eventForm.controls.phone.touched && eventForm.controls.phone.errors }"
+                  type="text" formControlName="phone" name="Phone">
+                <div [hidden]="!eventForm.controls.phone.errors?.required" class="invalid-feedback">
                   Telefon kontaktowy jest wymagany
                 </div>
               </div>
@@ -111,14 +116,14 @@
             <label class="col-sm-3 col-form-label">Email:</label>
             <div class="col-sm-6">
               <div class="row select-wrapper">
-                <input  formControlName="val.Email" [ngClass]="{'is-invalid':Email.errors && Email.touched}"
-                  pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
-                  class="form-control" type="email" [(ngModel)]="event.Email" required>
-                <div [hidden]="!Email.errors?.pattern" class="invalid-feedback">
-                  Email jest niepoprawny
-                </div>
-                <div [hidden]="!Email.errors?.required" class="invalid-feedback">
+                <input class="form-control" [formControl]="eventForm.get('email')"
+                  [ngClass]="{ 'is-invalid': eventForm.controls.email.touched && eventForm.controls.email.errors }"
+                  type="email" formControlName="email" name="email">
+                <div [hidden]="!eventForm.controls.email.touched?.required" class="invalid-feedback">
                   Email jest wymagany
+                </div>
+                <div [hidden]="!eventForm.controls.email.errors?.required" class="invalid-feedback">
+                  Email jest nie poprawny
                 </div>
               </div>
             </div>
@@ -126,8 +131,8 @@
         </div>
       </div>
     </div>
-    <input [ngClass]="{'but-cus':!buttonRez}" [disabled]="!buttonRez" type="submit" value="Rezerwacja"
-      class="button_submit">
-    <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
-
+    <button class="button_submit" [ngClass]="{'but-cus':!eventForm.valid}" [disabled]="!eventForm.valid" type="submit"
+      value="Rezerwacja">Rezerwacja</button>
+  </form>
+  <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 </div>

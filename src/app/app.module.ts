@@ -66,7 +66,7 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
     AngularFireStorageModule,
     FormsModule,
     ReactiveFormsModule,
-    FormsModule,                               
+    FormsModule,
     ReactiveFormsModule,
     FlashMessagesModule.forRoot()
   ],
