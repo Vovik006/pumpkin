@@ -12,7 +12,9 @@ export class DashboardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+   
+  }
 
   @HostListener("window:scroll")
   checkScroll() {

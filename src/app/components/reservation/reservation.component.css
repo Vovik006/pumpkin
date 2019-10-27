@@ -6,8 +6,8 @@
   line-height: 23px;
 }
 
-.k{
-  background:#FFEEC3;
+.k {
+  background: #FFEEC3;
 }
 
 .card {
@@ -22,11 +22,11 @@
 
 }
 
-.date{
+.date {
   padding-right: 200px;
 }
 
-.color{
+.color {
   color: #FF7058;
 }
 
@@ -82,7 +82,7 @@
   margin-top: -3px;
 }
 
-.custom_btn{
+.custom_btn {
   border: none;
   background: #dedede;
   /*border-top-right-radius: 20px;*/
@@ -90,7 +90,8 @@
   /*border-bottom-right-radius: 20px;*/
   border-bottom-left-radius: 0;
 }
-.custom_input{
+
+.custom_input {
   border-top-right-radius: 0;
   /*border-top-left-radius: 20px;*/
   border-bottom-right-radius: 0;
@@ -101,12 +102,13 @@
   display: block;
   margin-left: 60vw;
   margin-top: -40px;
+  padding-left: 80px;
 }
 
 .but-cus {
   width: 232px;
   height: 66px;
-  background:darkgray;
+  background: darkgray;
   border-radius: 25px;
   font-family: Roboto;
   font-style: normal;

@@ -27,9 +27,8 @@
               <div class="col-sm-6">
                 <div class="row">
                   <input class="form-control col-8 custom_input" formControlName="date"
-                    [formControl]="eventForm.get('date')" 
-                    [minDate]="minDate" [markDisabled]="markDisabled" placeholder="dd-mm-yyyy" name="dp"
-                    ngbDatepicker #d="ngbDatepicker">
+                    [formControl]="eventForm.get('date')" [minDate]="minDate" [markDisabled]="markDisabled"
+                    placeholder="dd-mm-yyyy" name="dp" ngbDatepicker #d="ngbDatepicker">
                   <button class="btn custom_btn btn-outline-secondary col-2" (click)="d.toggle()" type="button">
                     <img class="image" src="https://image.flaticon.com/icons/svg/833/833593.svg" alt=""></button>
                 </div>
@@ -131,8 +130,10 @@
         </div>
       </div>
     </div>
+
     <button class="button_submit" [ngClass]="{'but-cus':!eventForm.valid}" [disabled]="!eventForm.valid" type="submit"
       value="Rezerwacja">Rezerwacja</button>
   </form>
-  <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
+    <div  class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 </div>
+<!-- *ngIf="showMoneyCounter" -->
