@@ -134,6 +134,5 @@
     <button class="button_submit" [ngClass]="{'but-cus':!eventForm.valid}" [disabled]="!eventForm.valid" type="submit"
       value="Rezerwacja">Rezerwacja</button>
   </form>
-    <div  class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
+    <div *ngIf="showMoneyCounter" class="moneyCounter">Razem do zaplaty:&nbsp;{{moneyCounter}}&nbsp;zł</div>
 </div>
-<!-- *ngIf="showMoneyCounter" -->
