@@ -23,11 +23,10 @@
 #title {
     position: relative;
     top: 180px;
-    left: 90px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 177.5%;
     letter-spacing: 0.1em;
     color: #000000;
@@ -40,11 +39,10 @@
 #children {
     position: relative;
     top: 190px;
-    left: 92px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.3vw;
+    font-size: 1.8vw;
     line-height: 177.5%;
     letter-spacing: 0.02em;
     color: #404040;
@@ -58,7 +56,6 @@
 .more {
     position: relative;
     top: 260px;
-    left: 96px;
     border-radius: 2em;
     font-size: xx-large;
     background-color: #FFB059;
