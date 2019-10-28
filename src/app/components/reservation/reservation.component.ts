@@ -61,14 +61,7 @@ export class ReservationComponent implements OnInit {
     console.log(this.markDisabled);
   }
 
-  // isWeekend(date: NgbDateStruct) {
-  //   const d = new Date(date.year, date.month - 1, date.day);
-  //   return d.getDay() === 0 || d.getDay() === 6;
-  // }
-  // isDisabled = (date: NgbDateStruct, current: { month: number }) => {
-  //   const d = new Date(date.year, date.month - 1, date.day);
-  //   return this.isWeekend(date); // this is undefined
-  // };
+
 
   onSubmit() {
     const event: Event = {
@@ -111,7 +104,7 @@ export class ReservationComponent implements OnInit {
 
   Minus() {
     if (
-      this.counter >= 0 &&
+      this.counter >= 1 &&
       this.eventForm.get("type").value === "Wycieczka farma dyń"
     ) {
       this.counter = this.counter - 1;
@@ -120,7 +113,7 @@ export class ReservationComponent implements OnInit {
         this.showMoneyCounter = false;
       }
     } else if (
-      this.counter >= 0 &&
+      this.counter >= 1 &&
       this.eventForm.get("type").value === "Wycieczka farma dyń z jedzeniem"
     ) {
       this.counter = this.counter - 1;
@@ -129,7 +122,7 @@ export class ReservationComponent implements OnInit {
         this.showMoneyCounter = false;
       }
     } else if (
-      this.counter >= 0 &&
+      this.counter >= 1 &&
       this.eventForm.get("type").value === "Urodziny"
     ) {
       this.counter = this.counter - 1;
