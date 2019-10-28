@@ -121,6 +121,13 @@
     }
 }
 
+@media screen and (max-width: 307px) {
+    #title {
+        text-decoration: underline #FFEEC3;
+        border-bottom: none;
+    }
+}
+
 
 /* Children */
 
