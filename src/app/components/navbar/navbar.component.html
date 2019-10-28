@@ -3,23 +3,23 @@
         <img src="../../../assets/img/Logo.svg" alt="">
     </a>
 
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <button id="hide-but" class="navbar-toggler" type="button" (click)="toggleNavbar()">
     <span class="navbar-toggler-icon">
       <i class="material-icons">list</i>
     </span>
   </button>
 
 
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <div class="collapse navbar-collapse" (click)="toggleNavbar()" [ngClass]="{'show': navbarOpen === true, 'hide': navbarOpen === false}">
         <ul id="nav-but" class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/reservation">Rezerwacja dla grup</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#cena">Cena</a>
+                <a href="#cena" class="nav-link">Cena</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Kontakt</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
             </li>
         </ul>
     </div>

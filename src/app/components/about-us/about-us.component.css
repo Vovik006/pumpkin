@@ -1,356 +1,351 @@
 #about-us {
-  width: 100%;
+    width: 100%;
 }
 
 .corner {
-  display: flex;
-  position: absolute;
-  left: 0;
-  background-color: white;
-  z-index: -99;
+    display: flex;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    z-index: -99;
 }
 
 #about-us-left {
-  width: 60%;
-  background-color: #FFEEC3;
-  border-bottom-right-radius: 10em;
-  z-index: 900;
+    width: 60%;
+    background-color: #FFEEC3;
+    border-bottom-right-radius: 10em;
+    z-index: 900;
 }
 
 #about-us-right {
-  max-height: 40em;
-  width: 40%;
-  border-top-left-radius: 10em;
+    max-height: 40em;
+    width: 40%;
+    border-top-left-radius: 10em;
 }
 
 #pumpkin_girl {
-  margin-bottom: 10em;
-  margin-top: 10em;
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  width: auto \9;
+    margin-bottom: 10em;
+    margin-top: 10em;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: auto \9;
 }
 
 #text-about {
-  padding-top: 10em;
+    padding-top: 10em;
 }
 
 #o-nas {
-  display: flex;
-  padding-left: 5em;
-  opacity: 0.3;
+    display: flex;
+    padding-left: 5em;
+    opacity: 0.3;
 }
 
 #title {
-  font-weight: bold;
-  border-bottom: 9px solid #FFEEC3;
-  display: inline-block;
-  margin-left: 1.8em;
-  margin-top: 0.4em;
-  font-family: Times;
-  font-size: 40px;
-  line-height: 46px;
-  letter-spacing: 0.02em;
-  line-height: 0.4;
-  color: #000000;
+    font-weight: bold;
+    border-bottom: 9px solid #FFEEC3;
+    display: inline-block;
+    margin-left: 1.8em;
+    margin-top: 0.4em;
+    font-family: Times;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    line-height: 0.4;
+    color: #000000;
 }
 
 #info {
-  display: flex;
-  text-align: left;
-  padding-left: 3em;
-  margin-top: 2em;
-  max-width: 25em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 23px;
-  line-height: 27px;
-  color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    text-align: left;
+    padding-left: 3em;
+    margin-top: 2em;
+    max-width: 25em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 @media screen and (max-width: 700px) {
-  #o-nas {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba(0, 0, 0, 0.42);
-    z-index: 999;
-    position: relative;
-    left: 0;
-    padding-top: 2em;
-  }
-
-  #title {
-    position: relative;
-    border: 0;
-    font-family: Times;
-    font-size: 33px;
-    line-height: 38px;
-    letter-spacing: 0.02em;
-    color: #000000;
-    z-index: 999;
-    left: 0;
-  }
-
-  #info {
-    position: relative;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(0, 0, 0, 0.65);
-    z-index: 999;
-    left: 0em;
-  }
-
-  #pumpkin_girl {
-    display: none;
-  }
-
-  #text-about {
-    padding-top: 0;
-    transform: translate(-120%, -4%);
-    z-index: 999;
-  }
-
-  #about-us {
-    width: 150%;
-  }
-
-  #about-us-left {
-    z-index: -1;
-  }
+    #o-nas {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.42);
+        z-index: 999;
+        position: relative;
+        left: 0;
+        padding-top: 2em;
+    }
+    #title {
+        position: relative;
+        border: 0;
+        font-family: Times;
+        font-size: 33px;
+        line-height: 38px;
+        border-bottom: 9px solid #FFEEC3;
+        display: inline-block;
+        line-height: 0.4;
+        letter-spacing: 0.02em;
+        color: #000000;
+        z-index: 999;
+        left: 0;
+    }
+    #info {
+        position: relative;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.65);
+        z-index: 999;
+        left: 0em;
+    }
+    #pumpkin_girl {
+        display: none;
+    }
+    #text-about {
+        padding-top: 0;
+        z-index: 999;
+    }
+    #about-us-left {
+        z-index: -1;
+        max-width: 10%;
+    }
 }
+
 
 /* Children */
 
 .row {
-  margin-right: 0em;
+    margin-right: 0em;
 }
 
 .children {
-  font-size: 40pt;
-  font-family: 'Times New Roman';
-  font-family: Times;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-  border-bottom: 9px solid #FFEEC3;
-  display: inline-block;
-  line-height: 0.4;
-  margin-left: 1.4em;
-  margin-top: 0.4em;
+    font-size: 40pt;
+    font-family: 'Times New Roman';
+    font-family: Times;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    border-bottom: 9px solid #FFEEC3;
+    display: inline-block;
+    line-height: 0.4;
+    margin-left: 1.4em;
+    margin-top: 0.4em;
 }
 
 #children-know {
-  margin-top: 10em;
-  min-width: 100%;
-  min-height: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.16%, rgba(255, 238, 195, 0.7) 95.67%);
-  overflow: hidden;
+    margin-top: 10em;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.16%, rgba(255, 238, 195, 0.7) 95.67%);
+    overflow: hidden;
 }
 
 #ellipse {
-  margin-top: 3em;
-  width: 100%;
+    margin-top: 3em;
+    width: 100%;
 }
 
 #flower {
-  background: white;
-  width: 20em;
-  height: 20em;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-  margin-left: 2em;
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    margin-left: 2em;
 }
 
 #flower-img {
-  position: relative;
-  padding-top: 30%;
+    position: relative;
+    padding-top: 30%;
 }
 
 #flower-span {
-  position: relative;
-  top: 1em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  max-width: 10em;
+    position: relative;
+    top: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    display: flex;
+    max-width: 10em;
 }
 
 #boot {
-  background: white;
-  width: 20em;
-  height: 20em;
-  border-radius: 50% 50%;
-  margin-top: 5em;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-radius: 50% 50%;
+    margin-top: 5em;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 #boot-img {
-  position: relative;
-  padding-top: 40%;
+    position: relative;
+    padding-top: 40%;
 }
 
 #boot-span {
-  position: relative;
-  top: 1em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  max-width: 10em;
+    position: relative;
+    top: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    display: flex;
+    max-width: 10em;
 }
 
 #money {
-  background: white;
-  width: 20em;
-  height: 20em;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 #money-img {
-  position: relative;
-  padding-top: 37%;
+    position: relative;
+    padding-top: 37%;
 }
 
 #money-span {
-  position: relative;
-  top: 1em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  max-width: 10em;
+    position: relative;
+    top: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    display: flex;
+    max-width: 10em;
 }
 
 #cow {
-  background: white;
-  width: 20em;
-  height: 20em;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-  margin-top: 5em;
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 5em;
 }
 
 #cow-img {
-  position: relative;
-  padding-top: 23%;
+    position: relative;
+    padding-top: 23%;
 }
 
 #cow-span {
-  position: relative;
-  top: 1em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  max-width: 10em;
+    position: relative;
+    top: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    display: flex;
+    max-width: 10em;
 }
 
 #line-cow {
-  border: 11px solid #000000;
-  transform: rotate(45deg);
-  position: relative;
-  top: 7em;
-  display: flex;
-  z-index: -1;
-  right: -9em;
+    border: 11px solid #000000;
+    transform: rotate(45deg);
+    position: relative;
+    top: 7em;
+    display: flex;
+    z-index: -1;
+    right: -9em;
 }
 
 #vegetables {
-  background: white;
-  width: 20em;
-  height: 20em;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
-  margin-right: 1em;
+    background: white;
+    width: 20em;
+    height: 20em;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    margin-right: 1em;
 }
 
 #vegetables-img {
-  position: relative;
-  padding-top: 22%;
+    position: relative;
+    padding-top: 22%;
 }
 
 #vegetables-span {
-  position: relative;
-  top: 1em;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  display: flex;
-  max-width: 10em;
+    position: relative;
+    top: 1em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    display: flex;
+    max-width: 10em;
 }
 
 #circles {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 #circles-down {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 #line1 {
-  stroke: black;
-  stroke-width: 15px;
+    stroke: black;
+    stroke-width: 15px;
 }
 
 #line2 {
-  stroke: black;
-  stroke-width: 15px;
+    stroke: black;
+    stroke-width: 15px;
 }
 
 @media screen and (max-width: 700px) {
-  .children {
-    font-size: 33px;
-    line-height: 1;
-    border: 0;
-    -webkit-text-decoration: underline #FFEEC3;
-    text-decoration: underline #FFEEC3;
-    font-family: Times;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #000000;
-  }
+    .children {
+        font-size: 33px;
+        line-height: 1;
+        border: 0;
+        -webkit-text-decoration: underline #FFEEC3;
+        text-decoration: underline #FFEEC3;
+        font-family: Times;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
 }
