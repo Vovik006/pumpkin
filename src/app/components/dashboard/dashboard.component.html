@@ -1,19 +1,17 @@
 <div class="start-window">
-  <app-navbar></app-navbar>
-  <div class="container main">
-    <div class="picture">
-      <img id="pumpkin" src="../../../assets/img/pumpkin_top.jpg" alt=" ">
-    </div>
-    <div class="text">
-      <div id="title"> Największy wybór dyń</div>
-      <div id="children"> Dzieci uwielbiają to miejsce!</div>
-      <a href="#o-nas"><button id="more">Zobacz więcej</button></a>
-    </div>
-    <button id="go_top" *ngIf="isShow" (click)="gototop()"><img id="arrow" src="../../../assets/img/expand-arrow.svg"
+    <app-navbar></app-navbar>
+    <div class="container main">
+        <div class="picture">
+            <img id="pumpkin" src="../../../assets/img/pumpkin_top.jpg" alt=" ">
+        </div>
+        <div class="text">
+            <div id="title"> Największy wybór dyń</div>
+            <div id="children"> Dzieci uwielbiają to miejsce!</div>
+            <a href="#o-nas"><button id="more">Zobacz więcej</button></a>
+        </div>
+        <button id="go_top" *ngIf="isShow" (click)="gototop()"><img id="arrow" src="../../../assets/img/expand-arrow.svg"
         alt=""></button>
-  </div>
-  <button id="go_top" *ngIf="isShow" (click)="gototop()"><img id="arrow" src="../../../assets/img/expand-arrow.svg"
-      alt=""></button>
+    </div>
 </div>
 <app-about-us></app-about-us>
 <app-benefits></app-benefits>
@@ -22,4 +20,3 @@
 <app-video></app-video>
 <app-contact></app-contact>
 <footer><a id="but" routerLink="/reg">Regulamin</a></footer>
-
