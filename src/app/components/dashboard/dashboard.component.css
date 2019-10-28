@@ -27,7 +27,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 53px;
+    font-size: 4vw;
     line-height: 177.5%;
     letter-spacing: 0.1em;
     color: #000000;
@@ -44,7 +44,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 31px;
+    font-size: 2.3vw;
     line-height: 177.5%;
     letter-spacing: 0.02em;
     color: #404040;
@@ -55,7 +55,7 @@
     animation-timing-function: cubic-bezier(0, -0, .18, .45);
 }
 
-#more {
+.more {
     position: relative;
     top: 260px;
     left: 96px;
@@ -174,7 +174,7 @@
 }
 
 @media screen and (max-width: 515px) {
-    #more {
+    .more {
         top: 58vh!important;
     }
 }
@@ -232,7 +232,7 @@
         margin-right: auto;
         width: 100%
     }
-    #more {
+    .more {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
