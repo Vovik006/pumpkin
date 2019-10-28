@@ -27,10 +27,6 @@
                }
                
                @media screen and (max-width: 575px) {
-                   #first-but {
-                       margin-top: 10em;
-                       margin-right: 2em;
-                   }
                    .nav-link {
                        color: black;
                        cursor: pointer;
@@ -46,12 +42,11 @@
                    .nav-item {
                        justify-content: space-between;
                        padding-right: 2em;
+                       align-content: flex-end;
                    }
                    .collapse {
-                       position: absolute;
+                       position: relative;
                        right: 0;
-                   }
-                   #nav-but {
-                       margin-top: 140px;
+                       justify-content: end;
                    }
                }

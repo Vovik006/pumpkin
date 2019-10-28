@@ -8,10 +8,10 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class PriceComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-  
+
   }
 
 }
