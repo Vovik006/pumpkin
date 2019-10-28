@@ -52,7 +52,6 @@
       z-index: 1;
       animation-name: moveInRight;
       animation-duration: 0.5s;
-      /* animation-timing-function: ease-out; */
       animation-timing-function: cubic-bezier(0, -0, .18, .45);
     }
 
@@ -133,7 +132,7 @@
       opacity: 0.25;
     }
 
-    <<<<<<< HEAD @media screen and (max-width: 710px) {
+    @media screen and (max-width: 710px) {
 
       .picture,
       .text {
@@ -194,121 +193,122 @@
         transform: translate(0%, 650%);
         margin: 0 auto;
       }
+    }
 
-      =======@media screen and (max-width: 515px) {
-        #more {
-          display: none !important;
-        }
+    @media screen and (max-width: 515px) {
+      #more {
+        display: none !important;
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      .start-window {
+        height: 100%;
       }
 
-      @media screen and (max-width: 770px) {
-        .start-window {
-          height: 100%;
-        }
-
-        .picture,
-        .text {
-          float: none;
-          width: 100%;
-        }
-
-        .main {
-          flex-direction: column-reverse;
-          height: auto;
-          max-width: 100%;
-          width: auto\9;
-          position: relative;
-        }
-
-        #title {
-          top: 40px;
-          left: 30px;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 30px;
-          line-height: 177.5%;
-          letter-spacing: 0.1em;
-          width: 180%;
-          margin: 0 auto;
-          transform: translate(0%, -20%);
-        }
-
-        #children {
-          top: 20px;
-          left: 30px;
-          padding-top: 1em;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 177.5%;
-          letter-spacing: 0.02em;
-          margin: 0 auto;
-          transform: translate(0%, -10%);
-        }
-
-        #pumpkin {
-          max-width: 100%;
-          height: auto;
-          width: auto\9;
-          left: 3px;
-        }
-
-        #more {
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 177.5%;
-          letter-spacing: 0.02em;
-          left: 55%;
-          top: 600px;
-          display: flex;
-        }
-
-
+      .picture,
+      .text {
+        float: none;
+        width: 100%;
       }
 
-      #but {
-
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 50vw;
-        text-decoration: underline;
-        color: black;
+      .main {
+        flex-direction: column-reverse;
+        height: auto;
+        max-width: 100%;
+        width: auto\9;
+        position: relative;
       }
 
-      @keyframes moveInLeft {
-        0% {
-          opacity: 0;
-          transform: translateX(-10rem);
-        }
-
-        80% {
-          transform: translateX(1rem);
-        }
-
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
+      #title {
+        top: 40px;
+        left: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 177.5%;
+        letter-spacing: 0.1em;
+        width: 180%;
+        margin: 0 auto;
+        transform: translate(0%, -20%);
       }
 
-      @keyframes moveInRight {
-        0% {
-          opacity: 0;
-          transform: translateX(10rem);
-        }
-
-        80% {
-          transform: translateX(-1rem);
-        }
-
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-
+      #children {
+        top: 20px;
+        left: 30px;
+        padding-top: 1em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 177.5%;
+        letter-spacing: 0.02em;
+        margin: 0 auto;
+        transform: translate(0%, -10%);
       }
+
+      #pumpkin {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+        left: 3px;
+      }
+
+      #more {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 177.5%;
+        letter-spacing: 0.02em;
+        left: 55%;
+        top: 600px;
+        display: flex;
+      }
+
+
+    }
+
+    #but {
+
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 50vw;
+      text-decoration: underline;
+      color: black;
+    }
+
+    @keyframes moveInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+      }
+
+      80% {
+        transform: translateX(1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+    }
+
+    @keyframes moveInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(10rem);
+      }
+
+      80% {
+        transform: translateX(-1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+    }
