@@ -13,11 +13,11 @@
     }
 
     #pumpkin {
-        position: relative;
-        right: 160px;
-        max-width: 200%;
-        height: auto;
-        width: auto\9;
+      position: relative;
+      right: 160px;
+      max-width: 200%;
+      height: auto;
+      width: auto\9;
     }
 
     #title {
@@ -31,9 +31,9 @@
       line-height: 177.5%;
       letter-spacing: 0.1em;
       color: #000000;
-
-
-
+      animation-name: moveInLeft;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0, -0, .18, .45);
     }
 
     #children {
@@ -47,6 +47,10 @@
       line-height: 177.5%;
       letter-spacing: 0.02em;
       color: #404040;
+      animation-name: moveInRight;
+      animation-duration: 0.5s;
+      /* animation-timing-function: ease-out; */
+      animation-timing-function: cubic-bezier(0, -0, .18, .45);
     }
 
     #more {
@@ -72,6 +76,10 @@
 
     #more:hover {
       background-color: orange;
+    }
+
+    #more:focus {
+      outline: none;
     }
 
     .main {
@@ -119,62 +127,68 @@
       height: 2em;
       opacity: 0.25;
     }
-    
+
     @media screen and (max-width: 710px) {
-        .picture,
-        .text {
-            float: none;
-            width: 100%;
-        }
-        .main {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        #title {
-            display: flex;
-            top: 80px;
-            left: 30px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 30px;
-            line-height: 177.5%;
-            letter-spacing: 0.1em;
-            width: 180%;
-            margin: 0 auto;
-            transform: translate(0%, -20%);
-        }
-        #children {
-            display: flex;
-            top: 70px;
-            left: 30px;
-            padding-top: 1em;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 177.5%;
-            letter-spacing: 0.02em;
-            margin: 0 auto;
-            transform: translate(0%, -10%);
-        }
-        #pumpkin {
-            max-width: 100%;
-            height: auto;
-            width: auto\9;
-            left: 3px;
-        }
-        #more {
-            display: flex;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 177.5%;
-            letter-spacing: 0.02em;
-            transform: translate(0%, 650%);
-            margin: 0 auto;
-        }
+
+      .picture,
+      .text {
+        float: none;
+        width: 100%;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      #title {
+        display: flex;
+        top: 80px;
+        left: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 177.5%;
+        letter-spacing: 0.1em;
+        width: 180%;
+        margin: 0 auto;
+        transform: translate(0%, -20%);
+      }
+
+      #children {
+        display: flex;
+        top: 70px;
+        left: 30px;
+        padding-top: 1em;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 177.5%;
+        letter-spacing: 0.02em;
+        margin: 0 auto;
+        transform: translate(0%, -10%);
+      }
+
+      #pumpkin {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+        left: 3px;
+      }
+
+      #more {
+        display: flex;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 177.5%;
+        letter-spacing: 0.02em;
+        transform: translate(0%, 650%);
+        margin: 0 auto;
+      }
     }
 
     #but {
@@ -184,4 +198,38 @@
       text-decoration: underline;
       color: black;
       display: block;
+    }
+
+    @keyframes moveInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+      }
+
+      80% {
+        transform: translateX(1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+    }
+
+    @keyframes moveInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(10rem);
+      }
+
+      80% {
+        transform: translateX(-1rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
     }
