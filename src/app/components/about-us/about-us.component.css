@@ -70,7 +70,7 @@
     color: rgba(0, 0, 0, 0.65);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     #o-nas {
         font-family: Roboto;
         font-style: normal;
@@ -114,14 +114,14 @@
     #text-about {
         padding-top: 0;
         z-index: 999;
+        padding-left: 30%;
     }
     #about-us-left {
-        z-index: -1;
-        max-width: 10%;
+        display: none;
     }
 }
 
-@media screen and (max-width: 307px) {
+@media screen and (max-width: 360px) {
     #title {
         text-decoration: underline #FFEEC3;
         border-bottom: none;
