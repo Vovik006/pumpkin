@@ -131,6 +131,12 @@
                 opacity: 0.25;
             }
             
+            @media screen and (max-width: 870px) {
+                #pumpkin {
+                    top: 7vh;
+                }
+            }
+            
             @media screen and (max-width: 515px) {
                 #more {
                     top: 58vh!important;

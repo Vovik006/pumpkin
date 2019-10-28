@@ -113,15 +113,17 @@
     }
     #text-about {
         padding-top: 0;
-        z-index: 999;
-        padding-left: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
     #about-us-left {
         display: none;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 381px) {
     #title {
         text-decoration: underline #FFEEC3;
         border-bottom: none;
