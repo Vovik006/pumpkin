@@ -130,8 +130,7 @@
                 height: 2em;
                 opacity: 0.25;
             }
-            
-            @media screen and (max-width: 710px) {
+            /* @media screen and (max-width: 710px) {
                 .picture,
                 .text {
                     float: none;
@@ -186,13 +185,12 @@
                     transform: translate(0%, 650%);
                     margin: 0 auto;
                 }
-            }
-            
-            @media screen and (max-width: 515px) {
+            } */
+            /* @media screen and (max-width: 515px) {
                 #more {
                     display: none !important;
                 }
-            }
+            } */
             
             @media screen and (max-width: 770px) {
                 .start-window {
@@ -211,7 +209,7 @@
                     position: relative;
                 }
                 #title {
-                    top: 40px;
+                    top: 2vh;
                     left: 30px;
                     font-family: Roboto;
                     font-style: normal;
@@ -221,10 +219,10 @@
                     letter-spacing: 0.1em;
                     width: 180%;
                     margin: 0 auto;
-                    transform: translate(0%, -20%);
+                    position: relative;
                 }
                 #children {
-                    top: 20px;
+                    top: 0vh;
                     left: 30px;
                     padding-top: 1em;
                     font-family: Roboto;
@@ -234,13 +232,15 @@
                     line-height: 177.5%;
                     letter-spacing: 0.02em;
                     margin: 0 auto;
-                    transform: translate(0%, -10%);
+                    position: relative;
                 }
                 #pumpkin {
                     max-width: 100%;
                     height: auto;
                     width: auto\9;
-                    left: 3px;
+                    left: 2%;
+                    top: 0vh;
+                    position: relative;
                 }
                 #more {
                     font-family: Roboto;
@@ -250,8 +250,8 @@
                     line-height: 177.5%;
                     letter-spacing: 0.02em;
                     left: 55%;
-                    top: 600px;
-                    display: flex;
+                    top: 69vh;
+                    position: relative;
                 }
             }
             
