@@ -179,6 +179,12 @@
     }
 }
 
+@media screen and (max-width: 679px) {
+    .more {
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .start-window {
         height: 100%;
