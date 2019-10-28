@@ -11,12 +11,12 @@ export class PriceComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-          return;
-      }
-      window.scrollTo(0, 0)
-  });
+  //   this.router.events.subscribe((evt) => {
+  //     if (!(evt instanceof NavigationEnd)) {
+  //         return;
+  //     }
+  //     window.scrollTo(0, 0);
+  // });
   }
 
 }
