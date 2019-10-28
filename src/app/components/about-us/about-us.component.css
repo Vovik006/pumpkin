@@ -89,7 +89,7 @@
         font-family: Times;
         font-size: 33px;
         line-height: 38px;
-        border-bottom: 9px solid #FFEEC3;
+        text-decoration: underline #FFEEC3;
         display: inline-block;
         line-height: 0.4;
         letter-spacing: 0.02em;
