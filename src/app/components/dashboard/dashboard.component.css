@@ -122,6 +122,50 @@
     outline: none;
 }
 
+.more1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background-color: rgb(245, 148, 38);
+}
+
+.more1:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.more1--orange {
+    background-color: rgb(245, 148, 38);
+    color: #fff;
+}
+
+.more1::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.more1:hover::after {
+    transform: scale(2);
+}
+
+.more1--animated {
+    animation-name: moveBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}
+
+.more1:focus {
+    outline: none;
+}
+
 .main {
     width: 82%;
     height: 55%;
@@ -188,7 +232,7 @@
 
 @media screen and (max-width: 770px) {
     .start-window {
-        height: 100vh;
+        height: 95vh;
     }
     .picture,
     .text {
@@ -208,7 +252,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 5vw;
         line-height: 177.5%;
         letter-spacing: 0.1em;
         width: 150%;
@@ -222,13 +266,12 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 3vw;
         line-height: 177.5%;
         letter-spacing: 0.02em;
-        margin: 0 auto;
         position: relative;
         text-align: center;
-        width: 115%;
+        width: 106%;
     }
     #pumpkin {
         max-width: 100%;
