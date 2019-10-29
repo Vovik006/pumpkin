@@ -87,7 +87,7 @@
         position: relative;
         border: 0;
         font-family: Times;
-        font-size: 5vw;
+        font-size: 33px;
         line-height: 38px;
         text-decoration: underline #FFEEC3;
         display: inline-block;
@@ -123,7 +123,7 @@
     }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 381px) {
     #title {
         text-decoration: underline #FFEEC3;
         border-bottom: none;
