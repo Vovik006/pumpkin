@@ -154,12 +154,14 @@
 @media screen and (max-width: 515px) {
   .more {
     top: 58vh !important;
+    text-decoration: none;
   }
 }
 
 @media screen and (max-width: 679px) {
   .more {
     height: auto;
+    text-decoration: none;
   }
 }
 
@@ -234,6 +236,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    text-decoration: none;
   }
 }
 
