@@ -107,8 +107,7 @@
         color: rgba(0, 0, 0, 0.65);
         z-index: 999;
         left: -5vh;
-        width: 122%;
-        text-align: justify;
+        width: 150%;
     }
     #pumpkin_girl {
         display: none;
@@ -129,6 +128,20 @@
     #title {
         text-decoration: underline #FFEEC3;
         border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #o-nas {
+        left: -7vh;
+    }
+    #title {
+        font-size: 7vw;
+        left: -5vh;
+        width: 100%;
+    }
+    #info {
+        left: -5vh;
     }
 }
 
