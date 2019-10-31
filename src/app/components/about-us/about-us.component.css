@@ -108,7 +108,7 @@
         z-index: 999;
         left: -5vh;
         width: 122%;
-        text-align: justify;
+        /*text-align: justify;*/
     }
     #pumpkin_girl {
         display: none;
