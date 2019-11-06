@@ -75,3 +75,11 @@
   color: darkgray;
   border: none;
 }
+@media screen and (max-width: 576px){
+  .text p{
+    font-size: 14px;
+  }
+  .text h3{
+    font-size: 17px;
+  }
+}

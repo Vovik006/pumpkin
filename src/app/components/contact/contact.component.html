@@ -4,9 +4,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 pr-md-5">
 
-                <form class="test ">
+                <form class="ml-auto pb-4">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Imię" #Name="ngModel" [ngClass]="{'is-invalid':Name.errors && Name.touched}" name="Name" [(ngModel)]="message.Name" required>
                         <div [hidden]="!Name.errors?.required" class="invalid-feedback">
@@ -29,28 +29,29 @@
                             Wiadomość jest wymagana
                         </div>
                     </div>
-                    <button type="submit" [disabled]="click" [ngClass]="{'btn-custom': click}" (click)="onSubmit()" class=" btn btn-red mr-auto">Wysłać</button>
+                    <button type="submit" [disabled]="click" [ngClass]="{'btn-custom': click}" (click)="onSubmit()" class=" btn btn-red mr-auto">Wyślij</button>
                 </form>
 
             </div>
-            <div class="col-md-6">
 
-                <div class="email row ml-5">
-                    <img class="pb-3 pr-4" src="../../../assets/img/email.svg" alt="Email">
+            <div class="col-md-6 pl-md-5">
+
+                <div class="email pl-3 pl-md-0 row">
+                    <img class="image pb-3 pr-4" src="../../../assets/img/email.svg" alt="Email">
                     <div class="text">
                         <h3>Email:</h3>
                         <p>biuro@farmadyn.pl</p>
                     </div>
                 </div>
-                <div class="adres row  ml-5 pt-4">
-                    <img class="pb-3 pr-4" src="../../../assets/img/spot.svg" alt="Localisation">
+                <div class="adres pl-3 pl-md-0 row pt-4">
+                    <img class="image pb-3 pr-4" src="../../../assets/img/spot.svg" alt="Localisation">
                     <div class="text">
                         <h3>Adres:</h3>
                         <p>Warszawa, ul.Przyczółkowa 2k</p>
                     </div>
                 </div>
-                <div class="telefon row ml-5 pt-4">
-                    <img class="pb-3 pr-4" src="../../../assets/img/phone.svg" alt="Phone">
+                <div class="telefon pl-3 pl-md-0 row pt-4">
+                    <img class="image pb-3 pr-4" src="../../../assets/img/phone.svg" alt="Phone">
                     <div class="text">
                         <h3>Telefon:</h3>
                         <p>692-992-589 / 506-441-403</p>

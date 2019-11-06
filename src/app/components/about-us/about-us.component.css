@@ -59,13 +59,13 @@
 #info {
     display: flex;
     text-align: left;
-    padding-left: 3em;
+    padding-left: 3.5em;
     margin-top: 2em;
     max-width: 25em;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 27px;
     color: rgba(0, 0, 0, 0.65);
 }
@@ -80,14 +80,14 @@
         color: rgba(0, 0, 0, 0.42);
         z-index: 999;
         position: relative;
-        left: 0;
+        left: -7.7vh;
         padding-top: 2em;
     }
     #title {
         position: relative;
         border: 0;
         font-family: Times;
-        font-size: 5vw;
+        font-size: 40px;
         line-height: 38px;
         text-decoration: underline #FFEEC3;
         display: inline-block;
@@ -95,7 +95,8 @@
         letter-spacing: 0.02em;
         color: #000000;
         z-index: 999;
-        left: 0;
+        left: -8vh;
+        width: 100%;
     }
     #info {
         position: relative;
@@ -106,9 +107,8 @@
         line-height: 19px;
         color: rgba(0, 0, 0, 0.65);
         z-index: 999;
-        left: -5vh;
-        width: 122%;
-        text-align: justify;
+        left: -6.2vh;
+        width: 150%;
     }
     #pumpkin_girl {
         display: none;
@@ -125,10 +125,25 @@
     }
 }
 
-@media screen and (max-width: 381px) {
+@media screen and (max-width: 430px) {
+    #o-nas {
+        padding-top: 7vh;
+        left: -13vh;
+    }
     #title {
-        text-decoration: underline #FFEEC3;
-        border-bottom: none;
+        left: -12vh!important;
+    }
+    #info {
+        padding-left: 1.3vh;
+        width: 160%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #title {
+        font-size: 33px;
+        left: -6.5vh;
+        width: max-content;
     }
 }
 

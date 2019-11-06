@@ -88,25 +88,38 @@ padding-top: 30px;
 
 }
 
+
 @media screen and (max-width: 830px) {
   .circle{
-    width: 280px;
-    height: 280px;
+    width: 175px;
+    height: 175px;
     margin: auto;
   }
   .mob_margin1{
     margin-left: 30px;
   }
+  .image, .image2{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 66px;
+  }
+ .circle p{
+   font-size: 13px;
+ }
+ .circle{
 
+ }
   .mob_margin2{
     margin-right: 30px;
   }
   .main{
     display: block;
+    max-width: 495px;
   }
   .line{
     width: 305px;
-    margin: 0 auto;
+    margin: -30px auto;
+
   }
 
   .wrapper{
@@ -133,6 +146,19 @@ padding-top: 30px;
     text-decoration: underline #FFEEC3;
   }
 }
+@media screen and (max-width: 400px) {
+  .circle{
+    width: 155px;
+    height: 155px;
+  }
+  .line{
+    border-bottom: 12px solid;
+  }
+  .margin_minus_20{
+    margin-bottom: -20px;
+  }
+}
+
 .wrapper{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.16%, rgba(255, 238, 195, 0.7) 95.67%);
   position: relative;
