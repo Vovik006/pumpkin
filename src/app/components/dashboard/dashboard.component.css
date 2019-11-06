@@ -20,6 +20,7 @@
     .title {
         position: relative;
         top: 180px;
+        width: 120%;
         font-family: Acme;
         text-transform: capitalize;
         font-style: normal;
