@@ -35,6 +35,8 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { FlashMessagesModule } from "angular2-flash-messages";
 
 import { CirclesComponent } from "./components/circles/circles.component";
+import { AMessageComponent } from "./components/admin/a-message/a-message.component";
+import { AEventComponent } from './components/admin/a-event/a-event.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { CirclesComponent } from "./components/circles/circles.component";
     VideoComponent,
     RegComponent,
     NotFoundComponent,
-    CirclesComponent
+    CirclesComponent,
+    AMessageComponent,
+    AEventComponent
   ],
   imports: [
     BrowserModule,

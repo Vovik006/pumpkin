@@ -4,26 +4,34 @@
     <div class="col-md-6">
       <h2><i class="fa fa-users"></i> Messages</h2>
     </div>
+    <div class="but_header">
+      <button class="btn btn-primary" (click)="SortChecked()">Checked</button>
+      <button class="btn btn-primary" (click)="SortUnchecked()">Unchecked</button>
+    </div>
   </div>
-  <table *ngIf="messages?.length > 0;else noMessages" class="table table-striped">
-    <thead class="thead-inverse">
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th></th>
+        <th scope="col"><button class="cus_button" [disabled]="counterEmail!=0" (click)="onSortName()">Name</button>
+        </th>
+        <th scope="col"><button class="cus_button" [disabled]="counterName!=0" (click)="onSortEmail()">Email</button>
+        </th>
+        <th>Message</th>
+        <th>Checked</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let message of messages">
-        <td>{{message.Name}}</td>
-        <td>{{message.Email}}</td>
-        <td>{{message.Message}}</td>
-        <!-- <td><a routerLink="/{{client.id}}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-o-right">
-            </i>Details</a></td> -->
+      <tr *ngFor="let message of _messages">
+        <td>
+          {{ message.Name }}
+        </td>
+        <td>{{ message.Email}}</td>
+        <td>{{ message.Message}}</td>
+        <td>{{message.Checked}}</td>
+        <td><a routerLink="{{message.id}}" class="btn btn-secondary btn-sm"></a></td>
       </tr>
     </tbody>
   </table>
-
   <ng-template #noMessages>
     <hr>
     <h5>There are no messages in the system</h5>

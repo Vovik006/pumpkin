@@ -1,0 +1,41 @@
+<app-a-navbar></app-a-navbar>
+<div class="row">
+  <div class="col-md-6">
+    <a routerLink="/adminpanel/messages" class="btn btn-link">Back to Dashboard
+    </a>
+  </div>
+  <div class="col-md-6">
+    <div class="btn-group">
+      <button *ngIf="!message.Checked" (click)="Check()" class="btn btn-dark">
+        Check
+      </button>
+      <button *ngIf="message.Checked" (click)="Uncheck()" class="btn btn-dark">
+          Uncheck
+        </button>
+      <button (click)="OnDeleteClick()" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
+<hr>
+<div *ngIf="message" class="card">
+  <h3 class="card-header">
+    {{message.Name}}
+  </h3>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-8 col-sm-6">
+        <h4>Message:</h4>
+        <div class="text">
+          {{message.Message}}
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-6">
+        Checked: &nbsp; {{message.Checked}}
+      </div>
+    </div>
+    <hr>
+    <ul class="list-group">
+      <li class="list-group-item">Contact Email: {{message.Email}}</li>
+    </ul>
+  </div>
+</div>
