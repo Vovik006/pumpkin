@@ -20,7 +20,7 @@
     .title {
         position: relative;
         top: 180px;
-        width: 120%;
+        width: 50vw;
         font-family: Acme;
         text-transform: capitalize;
         font-style: normal;
@@ -196,6 +196,7 @@
         float: right;
         max-width: 60%;
         display: block;
+        padding-left: 3vh;
     }
     
     .go_top {
