@@ -10,13 +10,14 @@
                    font-weight: 500;
                    font-size: 19px;
                    line-height: 22px;
+                   padding-left: 2vh!important;
+                   padding-right: 2vh!important;
+                   border-radius: 20px;
                }
                
                .nav-link:hover {
                    background-color: rgb(245, 148, 38);
-                   border-radius: 20px;
-                   padding-left: 3vh;
-                   padding-right: 3vh;
+                   color: white;
                }
                
                .nav-item {
@@ -29,7 +30,7 @@
                    right: 0;
                }
                
-               @media screen and (max-width: 575px) {
+               @media screen and (max-width: 650px) {
                    .nav-link {
                        color: black;
                        cursor: pointer;
@@ -38,6 +39,10 @@
                        font-weight: 500;
                        font-size: 19px;
                        line-height: 22px;
+                   }
+                   .nav-link:hover {
+                       background-color: rgb(245, 148, 38);
+                       color: white;
                    }
                    .nav-item {
                        justify-content: space-between;
