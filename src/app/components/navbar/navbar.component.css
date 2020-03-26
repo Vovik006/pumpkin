@@ -1,34 +1,8 @@
                #navbar {
-                 background-color: none;
+                   background-color: none;
                }
-
+               
                .nav-link {
-                 color: black;
-                 cursor: pointer;
-                 font-family: Roboto;
-                 font-style: normal;
-                 font-weight: 500;
-                 font-size: 19px;
-                 line-height: 22px;
-               }
-
-               .nav-link:hover {
-                 background-color: rgb(245, 148, 38);
-                 border-radius: 20px;
-               }
-
-               .nav-item {
-                 justify-content: space-between;
-                 padding-right: 2em;
-               }
-
-               .collapse {
-                 position: absolute;
-                 right: 0;
-               }
-
-               @media screen and (max-width: 575px) {
-                 .nav-link {
                    color: black;
                    cursor: pointer;
                    font-family: Roboto;
@@ -36,18 +10,48 @@
                    font-weight: 500;
                    font-size: 19px;
                    line-height: 22px;
-                 }
-
-
-                 .nav-item {
+                   padding-left: 2vh!important;
+                   padding-right: 2vh!important;
+                   border-radius: 20px;
+               }
+               
+               .nav-link:hover {
+                   background-color: rgb(245, 148, 38);
+                   color: white;
+               }
+               
+               .nav-item {
                    justify-content: space-between;
                    padding-right: 2em;
-                   align-content: flex-end;
-                 }
-
-                 .collapse {
-                   position: relative;
+               }
+               
+               .collapse {
+                   position: absolute;
                    right: 0;
-                   justify-content: end;
-                 }
+               }
+               
+               @media screen and (max-width: 650px) {
+                   .nav-link {
+                       color: black;
+                       cursor: pointer;
+                       font-family: Roboto;
+                       font-style: normal;
+                       font-weight: 500;
+                       font-size: 19px;
+                       line-height: 22px;
+                   }
+                   .nav-link:hover {
+                       background-color: rgb(245, 148, 38);
+                       color: white;
+                   }
+                   .nav-item {
+                       justify-content: space-between;
+                       padding-right: 2em;
+                       align-content: flex-end;
+                   }
+                   .collapse {
+                       position: relative;
+                       right: 0;
+                       justify-content: end;
+                   }
                }

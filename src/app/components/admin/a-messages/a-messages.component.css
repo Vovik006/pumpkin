@@ -1,0 +1,27 @@
+.cus_button {
+  background-color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+.but_header {
+  text-align: left;
+  margin-left: 250px;
+}
+
+.btn-primary{
+    border-radius: 10px;
+    border-color:rgb(4, 46, 109);
+    
+}
+
+.btn-primary:first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.btn-primary:last-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

@@ -1,23 +1,21 @@
 <div class="start-window">
-    <app-navbar></app-navbar>
-    <div class="container main">
-        <div class="text">
-            <p class="title"> Najwi<span class="font-in-word">ę</span>kszy wybór dyń</p>
-            <p class="children"> Dzieci uwielbiają to miejsce!</p>
-            <a href="#o-nas"><button class="more more--animated btn btn-border">Zobacz więcej</button></a>
-        </div>
-        <div class="picture">
-            <img class="pumpkin" src="../../../assets/img/pumpkin_top.jpg" alt=" ">
-
-        </div>
-        <div class="button-mobile">
-            <a href="#o-nas"><button class="more1 more--animated btn btn-border">Zobacz więcej</button></a>
-        </div>
-
-
-        <button class="go_top" *ngIf="isShow" (click)="gototop()"><img class="arrow" src="../../../assets/img/expand-arrow.svg"
-        alt=""></button>
+  <app-navbar></app-navbar>
+  <div class="container main">
+    <div class="text">
+      <p class="title"> Najwi<span class="font-in-word">ę</span>kszy wybór dy<span class="last-letter">ń</span></p>
+      <p class="children"> Dzieci uwielbiają to miejsce!</p>
+      <a href="#o-nas"><button class="more more--animated btn btn-border">Zobacz więcej</button></a>
     </div>
+    <div class="picture">
+      <img class="pumpkin" src="../../../assets/img/pumpkin_top.jpg" alt=" ">
+    </div>
+    <div class="button-mobile">
+      <a href="#o-nas"><button class="more1 more--animated btn btn-border">Zobacz więcej</button></a>
+
+    </div>
+    <button class="go_top" *ngIf="isShow" (click)="gototop()"><img class="arrow"
+        src="../../../assets/img/expand-arrow.svg" alt=""></button>
+  </div>
 </div>
 <app-about-us></app-about-us>
 <app-benefits></app-benefits>
@@ -25,7 +23,9 @@
 <app-program></app-program>
 <app-video></app-video>
 <app-contact></app-contact>
+
 <footer>
   <a class="regulamin text-center" routerLink="/reg">Regulamin</a>
   <div class="text-center" >Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </footer>
+

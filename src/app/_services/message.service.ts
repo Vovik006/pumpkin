@@ -26,7 +26,7 @@ export class MessageService {
     this.messagesCollection.add(message);
   }
 
-  getMessages():Observable<ContactUs[]> {
+  getMessages(): Observable<ContactUs[]> {
     this.messages = this.messagesCollection.snapshotChanges().pipe(
       map(changes => {
         return changes.map(action => {
@@ -37,5 +37,32 @@ export class MessageService {
       })
     );
     return this.messages;
+  }
+
+  getMessage(id: string): Observable<ContactUs> {
+    this.messageDoc = this.afs.doc<ContactUs>(`Messages/${id}`);
+    this.message = this.messageDoc.snapshotChanges().pipe(
+      map(action => {
+        if (action.payload.exists === false) {
+          return null;
+        } else {
+          const data = action.payload.data() as ContactUs;
+          data.id = action.payload.id;
+          return data;
+        }
+      })
+    );
+    console.log(this.message);
+    return this.message;
+  }
+
+  deleteMessage(message: ContactUs) {
+    this.messageDoc = this.afs.doc(`Messages/${message.id}`);
+    this.messageDoc.delete();
+  }
+
+  updateMessage(message: ContactUs) {
+    this.messageDoc = this.afs.doc(`Messages/${message.id}`);
+    this.messageDoc.update(message);
   }
 }

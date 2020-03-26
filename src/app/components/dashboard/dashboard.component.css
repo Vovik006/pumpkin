@@ -1,7 +1,7 @@
     .start-window {
         background-color: #FFEEC3;
-        min-height: 53em;
-        height: 95vh;
+        min-height: 600px;
+        height: 100vh;
     }
     
     #start-img {
@@ -14,12 +14,13 @@
         max-width: 200%;
         height: auto;
         width: auto\9;
-        bottom: 4vh;
+        bottom: 6vh;
     }
     
     .title {
         position: relative;
         top: 180px;
+        width: 50vw;
         font-family: Acme;
         text-transform: capitalize;
         font-style: normal;
@@ -28,6 +29,7 @@
         line-height: 177.5%;
         letter-spacing: 0.1em;
         color: #000000;
+        -webkit-text-stroke-width: 1px;
         z-index: 1;
         animation-name: moveInLeft;
         animation-duration: 0.5s;
@@ -38,9 +40,14 @@
         font-family: Andada;
     }
     
+    .last-letter {
+        font-family: Andada;
+        -webkit-text-stroke-width: 1.5px;
+    }
+    
     .children {
         position: relative;
-        top: 190px;
+        top: 170px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -60,7 +67,7 @@
     
     .more {
         position: relative;
-        top: 260px;
+        top: 230px;
         border-radius: 2em;
         font-size: xx-large;
         background-color: #FFB059;
@@ -189,6 +196,7 @@
         float: right;
         max-width: 60%;
         display: block;
+        padding-left: 3vh;
     }
     
     .go_top {
@@ -211,6 +219,18 @@
         width: 2em;
         height: 2em;
         opacity: 0.25;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    
+    @media screen and (max-width: 375px) {
+        .title {
+            width: 57vw!important;
+        }
+        .children {
+            left: 7vw!important;
+        }
     }
     
     @media screen and (max-width: 940px) {
@@ -226,6 +246,27 @@
         .more1 {
             font-size: 3.5vw!important;
             top: 20vh!important;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .title {
+            width: 200%;
+            letter-spacing: 0.2em;
+            font-size: 26px;
+            text-align: center;
+            left: -3vh;
+        }
+        .children {
+            left: -11vh;
+            font-size: 16px;
+            width: 200%;
+        }
+        .pumpkin {
+            top: 12vh!important;
+        }
+        .more1 {
+            top: 30vh!important;
         }
     }
     
